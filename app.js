@@ -1,15 +1,19 @@
-var unirest = require("unirest");
+const express = require("express");
+const bodyParser = require('body-parser');
+const path = require('path');
 
-var req = unirest("GET", "https://google-books.p.rapidapi.com/volumes");
+const app = express();
 
-req.headers({
-	"x-rapidapi-host": "google-books.p.rapidapi.com",
-	"x-rapidapi-key": "b9b2c05cfamsh40e71d540d40b11p15e7d7jsnb566767fd57d"
-});
+const adminRouter = require("./Route/admin");
+
+app.set('view engine', 'pug');
+app.set('views', './views');
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
 
 
-req.end(function (res) {
-	if (res.error) throw new Error(res.error);
+app.use("/", adminRouter);
 
-	console.log(res.body);
-});
+
+app.listen(3000);
