@@ -4,7 +4,7 @@ const path = require('path');
 
 const app = express();
 
-const indexRouter = require("./Route/index");
+const indexRouter = require("./routes/index");
 
 app.set('view engine', 'pug');
 app.set('views', './views');
