@@ -11,7 +11,7 @@ head
 body
     .container
         nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.position-fixed.fixed-top
-            a.navbar-brand.mr-5(href="") 
+            a.navbar-brand.mr-5(href="/") 
                 svg.bi.bi-house-door(width="3em" height="3em" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
                     path(fill-rule="evenodd" d="M7.646 1.146a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5H9.5a.5.5 0 01-.5-.5v-4H7v4a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 01.5-.5h3a.5.5 0 01.5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" clip-rule="evenodd")
                         path(fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd")
@@ -22,35 +22,35 @@ body
                 ul.navbar-nav.mr-auto.mt-1.nav-tabs
 
                     li.nav-item
-                        a.nav-link.text-light(href="#") Movies
+                        a.nav-link.text-light(href="/navbar/movies") Movies
                     li.nav-item
-                        a.nav-link.text-light(href="#") Theater
+                        a.nav-link.text-light(href="/navbar/theater") Theater
                     li.nav-item
-                        a.nav-link.text-light(href="#") Events
+                        a.nav-link.text-light(href="/navbar/events") Events
                     li.nav-item
-                        a.nav-link.text-light(href="#") Concert
+                        a.nav-link.text-light(href="/navbar/concert") Concert
                     li.nav-item
-                        a.nav-link.text-light(href="#") Cinema    
+                        a.nav-link.text-light(href="/navbar/cinema") Cinema    
                     li.nav-item
-                        a.nav-link.text-light(href="#") Books
+                        a.nav-link.text-light(href="/navbar/books") Books
                     li.nav-item
-                        a.nav-link.text-light(href="#") Contact
+                        a.nav-link.text-light(href="/navbar/contact") Contact
                     
                 ul.navbar-nav.ml-auto.mt-1.mr-5
 
                     li.nav-item.mb-2.mr-2
-                        a.btn.btn-warning(href="#") Sign Up
+                        a.btn.btn-warning(href="/sign-up") Sign Up
                     
                     li.nav-item
                         div.btn-group(role="group" aria-label="Button group with nested dropdown")
                             div.btn-group(role="group")
                                 button.btn.btn-outline-warning.dropdown-toggle#btnGroupDrop1(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") User Panel
                                 div.dropdown-menu.bg-warning(aria-labelledby="btnGroupDrop1")
-                                    a.dropdown-item(href="#") Account
-                                    a.dropdown-item(href="#") Settings
-                                    a.dropdown-item(href="#") User Actions
-                                    a.dropdown-item(href="#") Sign In
-                                    a.dropdown-item(href="#") Sign Out
+                                    a.dropdown-item(href="/panel/account") Account
+                                    a.dropdown-item(href="/panel/settings") Settings
+                                    a.dropdown-item(href="/panel/actions") User Actions
+                                    a.dropdown-item(href="/panel/sign-in") Sign In
+                                    a.dropdown-item(href="/panel/sign-out") Sign Out
     
 
             
