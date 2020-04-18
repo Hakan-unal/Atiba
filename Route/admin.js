@@ -4,8 +4,7 @@ const router = express.Router();
 
 
 router.get("/", (req, res) => {
-    console.log("Selam bebek ben mugo kelebek");
-    res.end("Hello World");
+    res.render("index");
 });
 
 module.exports = router;
