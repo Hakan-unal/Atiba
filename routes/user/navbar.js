@@ -5,15 +5,7 @@ router.get("/movies", (req, res) => {
     res.render("index",{title:"Hello"});
 });
 
-router.get("/theater", (req, res) => {
-    res.render("index",{title:"Hello"});
-});
-
 router.get("/events", (req, res) => {
-    res.render("index",{title:"Hello"});
-});
-
-router.get("/concert", (req, res) => {
     res.render("index",{title:"Hello"});
 });
 
