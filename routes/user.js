@@ -1,54 +1,37 @@
 const express = require("express");
 const router = express.Router();
 
+const moviesController = require("../controllers/user/movies");
+const eventsController = require("../controllers/user/events");
+const userController = require("../controllers/user/user");
+const cinemaController = require("../controllers/user/cinema");
+const booksController = require("../controllers/user/books");
+const contactController = require("../controllers/user/contact");
+const accountController = require("../controllers/user/account");
+const actionController = require("../controllers/user/action");
+const signOutController = require("../controllers/user/sign-out");
+const covid19Controller = require("../controllers/user/covid-19");
 
-router.get("/", (req, res) => {
-    res.render("./pugs/user",{title:"User Panel",isAuthentication:true});
-});
 
-router.get("/movies", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/", userController.displayUserPage);
 
-router.get("/events", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/movies", moviesController.displayMoviesPage);
 
-router.get("/cinema", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/events", eventsController.displayEventsPage);
 
-router.get("/books", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/cinema", cinemaController.displayCinemaPage);
 
-router.get("/contact", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/books", booksController.displayBooksPage);
 
-router.get("/account", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/contact", contactController.displayContactPage);
 
-router.get("/settings", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/account", accountController.displayAccountPage);
 
-router.get("/actions", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/actions", actionController.displayActionPage);
 
-router.get("/sign-in", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
+router.get("/sign-out", signOutController.displaySignOutPage);
 
-router.get("/sign-out", (req, res) => {
-    res.render("index",{title:"Hello",isAuthentication:true});
-});
-
-router.get("/covid19", (req, res) => {
-    res.render("index",{title:"Hello"});
-});
+router.get("/covid-19", covid19Controller.displayCovid19Page);
 
 
 module.exports = router;
