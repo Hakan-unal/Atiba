@@ -1,14 +1,18 @@
 const express = require("express");
-
 const router = express.Router();
+const visitorController = require("../controllers/visitor");
 
 
-router.get("/", (req, res) => {
-    res.render("index",{title:"Hello"});
-});
 
-router.get("/sign-up", (req, res) => {
-    res.render("index",{title:"Hello"});
-});
+
+router.get("/", visitorController.displayIndexPage);
+
+router.get("/sign-up", visitorController.displaySignUpPage);
+router.post("/sign-up", visitorController.postSignUp);
+
+router.get("/login", visitorController.displayLoginPage);
+router.post("/login", visitorController.postLoginPage);
+
+router.get("/register", visitorController.displayRegisterPage);
 
 module.exports = router;

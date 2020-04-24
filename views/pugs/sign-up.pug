@@ -1,0 +1,24 @@
+extends ../layouts/main.pug 
+
+block content
+    .row
+        .col-md-4
+            form.form-group(name="sign-up" for="/sign-up" method="POST")
+                
+     
+                input.form-control.bg-dark.text-light(type="text" placeholder="Username" name="username" required)
+
+                input.form-control.mt-4.bg-dark.text-light(type="text" placeholder="Name" name="name" required)
+
+                input.form-control.mt-4.bg-dark.text-light(type="text" placeholder="Surname" name="surname" required)
+
+                input.form-control.mt-4.bg-dark.text-light(type="email" placeholder="Email" name="email" required)
+
+                input.form-control.mt-4.bg-dark.text-light(type="password" placeholder="Password" name="password" required)
+                    
+                input.mt-5.btn.btn-outline-light.rounded-pill.form-control.btn-block(type="submit" value="Sign Up")
+        
+        .col-1
+        .col-md-7.text-light
+            p.m-0 Bu alana kısa bir metin bul hoş görünür hem sayfanın sağ tarafı çok boş görünmemiş olur  tanıtıcı bir şeyler yazılabilir veya fotoğraf ekle
+
