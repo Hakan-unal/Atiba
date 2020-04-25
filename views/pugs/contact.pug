@@ -1,4 +1,53 @@
 extends ../layouts/main.pug 
 
 block content
-    p.text-light Contact sayfası 
+    .card.text-center.border-0
+        .card-header.bg-dark.text-light.border-0.display-4 CONTACT US
+        .card-body.bg-dark
+            .card-text
+                form(name="contact" for="/user/contact" method="POST")
+
+                    .form-group.row
+                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formFirstName") First name:
+                        .col-md-4
+                            input.form-control.form-control-md#formFirstName.bg-dark.text-light(type="text" placeholder="First name" style="font-size:20px" name="firstname" required)
+                            
+                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formLastName") Last name:
+                        .col-md-4
+                            input.form-control.form-control-md#formLastName.bg-dark.text-light(type="text" placeholder="Last name" style="font-size:20px" name="lastname" required)
+                    
+                    .form-group.row.mt-4
+                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formEmail") Email:
+                        .col-md-10
+                            input.form-control.form-control-md#formEmail.bg-dark.text-light(type="email" placeholder="Email" style="font-size:20px" name="email" required)
+
+                    .form-group.row.mt-4
+                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formTextarea") Textarea:
+                        .col-md-10                        
+                            textarea.form-control.form-control-md.bg-dark.text-light#formTextarea(rows="5" placeholder="Textarea" style="font-size:20px" name="text" required)
+
+                    .form-group.row.mt-4                
+                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formCategory") Category:
+                        .col-md-3
+                            select.form-control.form-control-md#formCategory(name="category")
+                                option Movies
+                                option Events
+                                option Cinema
+                                option Books
+                                option Covid-19
+                                option User Panel
+                                option General 
+                        
+                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formFile") Select File:
+                        .col-md-3
+                            input.form-control-file.form-control-md#formFile.text-light(type="file" name="file")
+                    
+                    .form-group-row.mt-5
+                        input.mt-2.btn.btn-outline-light.rounded-pill.form-control.w-25(type="submit" value="Send")
+                    
+                    
+
+                        
+    
+    
+  

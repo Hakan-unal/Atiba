@@ -24,6 +24,7 @@ router.get("/cinema", cinemaController.displayCinemaPage);
 router.get("/books", booksController.displayBooksPage);
 
 router.get("/contact", contactController.displayContactPage);
+router.post("/contact", contactController.postContactPage);
 
 router.get("/account", accountController.displayAccountPage);
 
