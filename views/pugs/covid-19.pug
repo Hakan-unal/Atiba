@@ -1,9 +1,94 @@
 extends ../layouts/main.pug 
 
 block content
-    .h1.text-light Covid
+    .card.border-0
+        .card-body.text-light.bg-dark
+            .row
+                .col-md-6.border-right
+                    .card-title.text-center.h3.mb-4 In The World
+
+                    .card-text.mb-4
+                        span.h5
+                            b Toplam test sayısı :
+                            p.d-inline#toplamtest.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Toplam vaka sayısı :
+                            p.d-inline#toplamvaka.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Toplam ölüm sayısı :
+                            p.d-inline#toplamolum.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Toplam kritic sayısı :
+                            p.d-inline#toplamcritic.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Toplam kurtarılan sayısı :
+                            p.d-inline#toplamkurtarilan.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Günlük vaka sayısı :
+                            p.d-inline#gunlukvaka.text-danger.h4(style="font-size:30px;")
+
+                        
+                    .card-text.mb-4
+                        span.h5
+                            b Günlük ölüm sayısı :
+                            p.d-inline#gunlukolum.text-danger.h4(style="font-size:30px;")
+                            
+
+
+                .col-md-6.border-left
+                    .card-title.text-center.h4
+                        select.custom-select.mb-2.custom-select-lg#select
+                        
+                    .card-tex.mb-4
+                        span.h5
+                            b Toplam test sayısı :
+                            p.d-inline#countrytoplamtest.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Toplam vaka sayısı :
+                            p.d-inline#countrytoplamvaka.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Toplam ölüm sayısı :
+                            p.d-inline#countrytoplamolum.text-danger.h4(style="font-size:30px;")
+
+                    .card-tex.mb-4
+                        span.h5
+                            b Toplam kritic sayısı :
+                            p.d-inline#countrytoplamcritic.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Toplam kurtarılan sayısı :
+                            p.d-inline#countrytoplamkurtarilan.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Günlük vaka sayısı :
+                            p.d-inline#countrygunlukvaka.text-danger.h4(style="font-size:30px;")
+
+                    .card-text.mb-4
+                        span.h5
+                            b Günlük ölüm sayısı :
+                            p.d-inline#countrygunlukolum.text-danger.h4(style="font-size:30px;")
+                        
+                    
+        .card-footer.bg-dark.text-light footer
+
 
 
 
 block scripts
-    script(src="http://localhost:3000/js/deneme.js")
+    script(src="http://localhost:3000/js/covid-19.js")
