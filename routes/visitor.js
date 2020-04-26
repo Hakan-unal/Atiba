@@ -4,7 +4,6 @@ const visitorController = require("../controllers/visitor");
 
 
 
-
 router.get("/", visitorController.displayIndexPage);
 
 router.get("/sign-up", visitorController.displaySignUpPage);

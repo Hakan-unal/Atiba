@@ -11,7 +11,7 @@ const accountController = require("../controllers/user/account");
 const actionController = require("../controllers/user/action");
 const signOutController = require("../controllers/user/sign-out");
 const covid19Controller = require("../controllers/user/covid-19");
-
+const documentationController=require("../controllers/user/documentation");
 
 router.get("/", userController.displayUserPage);
 
@@ -23,16 +23,23 @@ router.get("/cinema", cinemaController.displayCinemaPage);
 
 router.get("/books", booksController.displayBooksPage);
 
+router.get("/covid-19", covid19Controller.displayCovid19Page);
+
 router.get("/contact", contactController.displayContactPage);
 router.post("/contact", contactController.postContactPage);
 
 router.get("/account", accountController.displayAccountPage);
+router.post("/account", accountController.postAccountPage);
 
 router.get("/actions", actionController.displayActionPage);
 
+router.get("/documentation", documentationController.displayDocumentationPage);
+
 router.get("/sign-out", signOutController.displaySignOutPage);
 
-router.get("/covid-19", covid19Controller.displayCovid19Page);
+
+
+
 
 
 module.exports = router;

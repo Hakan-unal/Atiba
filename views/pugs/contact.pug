@@ -2,7 +2,6 @@ extends ../layouts/main.pug
 
 block content
     .card.text-center.border-0
-        .card-header.bg-dark.text-light.border-0.display-4 CONTACT US
         .card-body.bg-dark
             .card-text
                 form(name="contact" for="/user/contact" method="POST")
@@ -43,7 +42,7 @@ block content
                             input.form-control-file.form-control-md#formFile.text-light(type="file" name="file")
                     
                     .form-group-row.mt-5
-                        input.mt-2.btn.btn-outline-light.rounded-pill.form-control.w-25.btn-lg(type="submit" value="Send")
+                        input.mt-2.btn.btn-outline-light.rounded-pill.form-control.btn-lg(type="submit" value="Send" style="width:225px;")
                     
                     
 

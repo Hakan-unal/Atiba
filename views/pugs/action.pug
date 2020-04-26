@@ -1,4 +1,18 @@
 extends ../layouts/main.pug 
 
+include ../mixins/action
+
 block content
-    .h1.text-light Action
+    
+    table.table.table-dark
+        thead.thead-dark
+            tr
+                th(scope="col").h5 # Username
+                th(scope="col").h5 # Operation
+                th(scope="col").h5 # Date
+        tbody.tbody-dark
+            if objects !== null
+                each object in objects
+                    +createList(object)
+            else
+                 
