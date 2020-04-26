@@ -83,19 +83,4 @@ window.addEventListener("DOMContentLoaded", () => {
 
     calculate();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 });
