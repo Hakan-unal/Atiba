@@ -8,26 +8,26 @@ block content
                 form(name="contact" for="/user/contact" method="POST")
 
                     .form-group.row
-                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formFirstName") First name:
+                        label.col-md-2.col-form-label.col-form-label-lg.text-light(for="formFirstName") First name:
                         .col-md-4
                             input.form-control.form-control-md#formFirstName.bg-dark.text-light(type="text" placeholder="First name" style="font-size:20px" name="firstname" required)
                             
-                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formLastName") Last name:
+                        label.col-md-2.col-form-label.col-form-label-lg.text-light(for="formLastName") Last name:
                         .col-md-4
                             input.form-control.form-control-md#formLastName.bg-dark.text-light(type="text" placeholder="Last name" style="font-size:20px" name="lastname" required)
                     
                     .form-group.row.mt-4
-                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formEmail") Email:
+                        label.col-md-2.col-form-label.col-form-label-lg.text-light(for="formEmail") Email:
                         .col-md-10
                             input.form-control.form-control-md#formEmail.bg-dark.text-light(type="email" placeholder="Email" style="font-size:20px" name="email" required)
 
                     .form-group.row.mt-4
-                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formTextarea") Textarea:
+                        label.col-md-2.col-form-label.col-form-label-lg.text-light(for="formTextarea") Textarea:
                         .col-md-10                        
                             textarea.form-control.form-control-md.bg-dark.text-light#formTextarea(rows="5" placeholder="Textarea" style="font-size:20px" name="text" required)
 
                     .form-group.row.mt-4                
-                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formCategory") Category:
+                        label.col-md-2.col-form-label.col-form-label-lg.text-light(for="formCategory") Category:
                         .col-md-3
                             select.form-control.form-control-md#formCategory(name="category")
                                 option Movies
@@ -38,12 +38,12 @@ block content
                                 option User Panel
                                 option General 
                         
-                        label.col-md-2.col-form-label.col-form-label-md.text-light(for="formFile") Select File:
+                        label.col-md-2.col-form-label.col-form-label-lg.text-light(for="formFile") Select File:
                         .col-md-3
                             input.form-control-file.form-control-md#formFile.text-light(type="file" name="file")
                     
                     .form-group-row.mt-5
-                        input.mt-2.btn.btn-outline-light.rounded-pill.form-control.w-25(type="submit" value="Send")
+                        input.mt-2.btn.btn-outline-light.rounded-pill.form-control.w-25.btn-lg(type="submit" value="Send")
                     
                     
 
