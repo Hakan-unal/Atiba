@@ -1,3 +1,7 @@
+const userModel = require("../models/user");
+
+
+
 exports.displayLoginPage = (req, res) => {
     res.render("./pugs/login", { title: "Login", isAuthentication: true });
 }
@@ -14,6 +18,8 @@ exports.displaySignUpPage = (req, res) => {
 
 
 exports.postSignUp = (req, res) => {
+
+    userModel.saveUser(req.body.username, req.body.name, req.body.surname, req.body.email, req.body.password);
     res.redirect("/register");
 }
 
@@ -24,5 +30,5 @@ exports.displayIndexPage = (req, res) => {
 
 
 exports.displayRegisterPage = (req, res) => {
-    res.render("./pugs/register", { title: "Succesful"});
+    res.render("./pugs/register", { title: "Succesful" });
 }

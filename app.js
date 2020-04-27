@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require('body-parser');
 const errorController = require("./controllers/error.js");
-const mongoConnect = require('./utility/database');
+const _db = require('./utility/database');
 
 const port = 3000;
 
@@ -21,7 +21,7 @@ app.use(visitorRouter);
 app.use(errorController.get404Page);
 
 
-mongoConnect(() => {
+_db.mongoConnect(() => {
 
     app.listen(port, () => {
         console.log(" ");
