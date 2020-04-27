@@ -4,7 +4,6 @@ exports.displayLoginPage = (req, res) => {
 
 
 exports.postLoginPage = (req, res) => {
-    console.log(req.body.username);
     res.redirect("/user");
 }
 
