@@ -3,15 +3,15 @@ const userModel = require("../models/user");
 
 
 exports.displayLoginPage = (req, res) => {
-    res.render("./pugs/login", { title: "Login", isAuthentication: true });
+    res.render("./pugs/login", { title: "Login", isAuthentication: false });
 }
 
 
 exports.postLoginPage = (req, res) => {
     userModel.checkUser(req.body.username, req.body.password).then(result => {
-        if(result){
+        if (result) {
             res.redirect("/user");
-        }else{
+        } else {
             res.redirect("/login");
         }
     })
@@ -38,4 +38,9 @@ exports.displayIndexPage = (req, res) => {
 
 exports.displayRegisterPage = (req, res) => {
     res.render("./pugs/register", { title: "Succesful" });
+}
+
+
+exports.displayForgetPasswordPage = (req, res) => {
+    res.render("./pugs/forgetPassword", { title: "Forget Password" })
 }
