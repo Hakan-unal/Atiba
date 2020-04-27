@@ -21,7 +21,7 @@ app.use(visitorRouter);
 app.use(errorController.get404Page);
 
 
-mongoConnect((client) => {
+mongoConnect(() => {
 
     app.listen(port, () => {
         console.log(" ");
