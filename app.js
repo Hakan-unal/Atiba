@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require('body-parser');
-const errorController=require("./controllers/error.js");
+const errorController = require("./controllers/error.js");
+const port = 3000;
 
 const app = express();
 const visitorRouter = require("./routes/visitor");
@@ -18,6 +19,7 @@ app.use(visitorRouter);
 app.use(errorController.get404Page);
 
 
-app.listen(3000,()=>{
-    console.log("Port:3000 running")
+app.listen(port, () => {
+    console.log(" ");
+    console.log(`Port: ${port}   running...`);
 });

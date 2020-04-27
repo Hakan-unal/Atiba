@@ -1,3 +1,6 @@
+const logController = require("../log");
+
+
 exports.displayActionPage = (req, res) => {
     res.render("./pugs/action", {
         title: "User Actions", isAuthentication: true, objects: [{
@@ -6,4 +9,8 @@ exports.displayActionPage = (req, res) => {
             date: "date"
         }]
     });
+
+    
+    const date = new Date();
+    logController.saveLocalStorage("GET", date, "/user/actions")
 }
