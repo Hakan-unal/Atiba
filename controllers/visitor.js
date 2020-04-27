@@ -8,7 +8,14 @@ exports.displayLoginPage = (req, res) => {
 
 
 exports.postLoginPage = (req, res) => {
-    res.redirect("/user");
+    userModel.checkUser(req.body.username, req.body.password).then(result => {
+        if(result){
+            res.redirect("/user");
+        }else{
+            res.redirect("/login");
+        }
+    })
+
 }
 
 
