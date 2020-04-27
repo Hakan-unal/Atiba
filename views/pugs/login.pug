@@ -3,18 +3,24 @@ extends ../layouts/main.pug
 block content
     .row
         .col-md-4
-            form.form-group(name="login" for="/login" method="POST")
+            form.form-group#loginform(name="login" for="/login" method="POST")
                 
      
-                input.form-control.form-control-lg.bg-dark.text-light(type="text" placeholder="Username" name="username" required)
+                input.form-control.form-control-lg.bg-dark.text-light#usernamebox(type="text" placeholder="Username" name="username" required)
                     
-                input.form-control.form-control-lg.mt-4.bg-dark.text-light(type="password" placeholder="Password" name="password" required)
+                input.form-control.form-control-lg.mt-4.bg-dark.text-light#passwordbox(type="password" placeholder="Password" name="password" required)
                 small.badge.d-flex.justify-content-end.mt-1
                     a.stretched-link.text-danger(href="#" style="position: relative;") Did you forget your password ?
-                    
-                input.mt-5.btn.btn-outline-light.btn-lg.rounded-pill.form-control.btn-block(type="submit" value="Login")
+                
+                .form-check.mt-3
+                    input.form-check-input#checkbox(type="checkbox")
+                    label.form-check-label.text-light Remember me
+
+                input.mt-3.btn.btn-outline-light.btn-lg.rounded-pill.form-control.btn-block#submitbutton(type="submit" value="Login")
         
         .col-1
         .col-md-7.text-light
             p.m-0 Bu alana kısa bir metin bul hoş görünür hem sayfanın sağ tarafı çok boş görünmemiş olur  tanıtıcı bir şeyler yazılabilir veya fotoğraf ekle
 
+block scripts
+    script(src="http://localhost:3000/js/login.js")
