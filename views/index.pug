@@ -1,5 +1,8 @@
 extends layouts/main.pug 
 
 block content 
-    p.text-light.lead Ana sayfa içeriği olacak tek sayfalık görsel bir şeyler koysan yeterli
-    
+    .content.position-relative
+        img.w-100.rounded(src="http://localhost:3000/img/gokkusagi.jpg" alt="Gök kuşağı" style="opacity:0.2;")
+        .row(style="position:absolute; top:35px; left:38px; right:38px;") 
+            p.my-auto.mx-auto merhaba
+            
