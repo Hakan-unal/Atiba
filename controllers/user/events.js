@@ -1,11 +1,16 @@
 const logController = require("../log");
+const sessionstorage = require('sessionstorage');
 
 
 
 exports.displayEventsPage = (req, res) => {
-    res.render("./pugs/events", { title: "Events", isAuthentication: true });
+    const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
-    
-    const date = new Date();
-    logController.saveLocalStorage("GET", date, "/user/events")
+    if (isAuthen !== true) {
+        res.redirect("/login");
+    } else {
+        res.render("./pugs/events", { title: "Events", isAuthentication: isAuthen });
+        const date = new Date();
+        logController.saveLocalStorage("GET", date, "/user/events")
+    }
 }

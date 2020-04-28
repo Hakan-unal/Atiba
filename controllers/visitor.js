@@ -10,7 +10,8 @@ exports.displayLoginPage = (req, res) => {
 exports.postLoginPage = (req, res) => {
     userModel.checkUser(req.body.username, req.body.password).then(result => {
         if (result) {
-            sessionstorage.setItem("user", JSON.stringify([req.body.username]));
+            sessionstorage.setItem("user", JSON.stringify(result._id));
+            sessionstorage.setItem("authentication", JSON.stringify(true));
             res.redirect("/user");
         } else {
             res.redirect("/login");

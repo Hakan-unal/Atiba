@@ -1,12 +1,17 @@
 const logController = require("../log");
+const sessionstorage = require('sessionstorage');
 
 
 
 exports.displayCovid19Page = (req, res) => {
-    res.render("./pugs/covid-19", { title: "Covid-19", isAuthentication: true });
+    const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
-    
-    const date = new Date();
-    logController.saveLocalStorage("GET", date, "/user/covid-19")
+    if (isAuthen !== true) {
+        res.redirect("/login");
+    } else {
+        res.render("./pugs/covid-19", { title: "Covid-19", isAuthentication: isAuthen });
+        const date = new Date();
+        logController.saveLocalStorage("GET", date, "/user/covid-19")
+    }
 
 }

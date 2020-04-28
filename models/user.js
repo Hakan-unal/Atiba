@@ -32,7 +32,7 @@ exports.checkUser = (username, password) => {
         .then(user => {
             let value = false;
             if (user !== null) {
-                value = true;
+                value = user;
 
                 let date = new Date();
                 logController.saveLocalStorage("Succes Login", date, user);
@@ -47,11 +47,11 @@ exports.checkUser = (username, password) => {
 }
 
 
-exports.findUser = (username) => {
+exports.findUser = (id) => {
     const db = database.getdb();
 
     return db.collection("users")
-        .findOne({ username: username })
+        .findOne({ _id: ObjectID(id) })
         .then(user => {
             let value = false;
             if (user !== null) {
