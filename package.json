@@ -22,6 +22,7 @@
     "node-localstorage": "^2.1.6",
     "nodemon": "^2.0.2",
     "pug": "^2.0.3",
+    "sessionstorage": "^0.1.0",
     "unirest": "^0.6.0"
   },
   "bugs": {

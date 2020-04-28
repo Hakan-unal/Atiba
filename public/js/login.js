@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (checkBox.checked) {
             saveUserLocalStorage(username.value, password.value);
         } else {
-            localStorage.setItem("user", JSON.stringify(null));
+            localStorage.clear();
         }
     });
 

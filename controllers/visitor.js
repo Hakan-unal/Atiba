@@ -1,5 +1,5 @@
 const userModel = require("../models/user");
-
+const sessionstorage = require('sessionstorage');
 
 
 exports.displayLoginPage = (req, res) => {
@@ -10,6 +10,7 @@ exports.displayLoginPage = (req, res) => {
 exports.postLoginPage = (req, res) => {
     userModel.checkUser(req.body.username, req.body.password).then(result => {
         if (result) {
+            sessionstorage.setItem("user", JSON.stringify([req.body.username]));
             res.redirect("/user");
         } else {
             res.redirect("/login");

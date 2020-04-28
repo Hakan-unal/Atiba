@@ -4,26 +4,28 @@ block content
     .row.border
         .col-4
             i.far.fa-address-card.text-light(style="font-size:310px;")
-            i.fas.fa-check.d-none#checkIcon(style="font-size:300px;")
+            
  
         .col-1
         .col-7
             form.form-group(name="accountForm" for="/user/account" method="POST")
                 
-                label.text-muted.h5.mt-4 Username : 
-                input.form-control.form-control-lg.bg-dark.text-light#usernamebox(type="text" placeholder="Username" name="username" value=`${obj.username}` required)
                 
                 label.text-muted.mt-5.h5 Name :
-                input.form-control.form-control-lg.bg-dark.text-light#namebox(type="text" placeholder="Name" name="name" value=`${obj.name}` required)
+                input.form-control.form-control-lg.bg-dark.text-success#namebox(type="text" placeholder="Name" name="name" value=`${obj.name}` required)
 
                 label.text-muted.mt-5.h5 Surname :
-                input.form-control.form-control-lg.bg-dark.text-light#surnamebox(type="text" placeholder="Surname" name="surname" value=`${obj.surname}` required)
+                input.form-control.form-control-lg.bg-dark.text-success#surnamebox(type="text" placeholder="Surname" name="surname" value=`${obj.surname}` required)
+
+                label.text-muted.h5.mt-4 Username : 
+                input.form-control.form-control-lg.bg-dark.text-success#usernamebox(type="text" placeholder="Username" name="username" value=`${obj.username}` required) 
 
                 label.text-muted.mt-5.h5 Email :
-                input.form-control.form-control-lg.bg-dark.text-light#emailbox(type="email" placeholder="Email" name="email" value=`${obj.email}` required)
+                input.form-control.form-control-lg.bg-dark.text-success#emailbox(type="email" placeholder="Email" name="email" value=`${obj.email}` required)
                     
                 input.mt-5.btn.btn-outline-light.btn-lg.rounded-pill.form-control.btn-block#savebutton(type="submit" value="Save")
 
+                input.d-none(type="text" name="id" value=`${obj._id}`) 
 
 block scripts
     script(src="http://localhost:3000/js/account.js")

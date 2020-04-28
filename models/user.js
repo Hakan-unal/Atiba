@@ -1,6 +1,6 @@
 const database = require("../utility/database");
 const logController = require("../controllers/log");
-
+const ObjectID = require("mongodb").ObjectID;
 
 exports.saveUser = (username, name, surname, email, password) => {
     const db = database.getdb();
@@ -47,4 +47,32 @@ exports.checkUser = (username, password) => {
 }
 
 
+exports.findUser = (username) => {
+    const db = database.getdb();
 
+    return db.collection("users")
+        .findOne({ username: username })
+        .then(user => {
+            let value = false;
+            if (user !== null) {
+                value = user;
+            }
+            return value;
+        })
+}
+
+
+
+exports.updateUser = (id, name, surname, username, email) => {
+    const db = database.getdb();
+    db.collection("users").updateOne({
+        "_id": ObjectID(id)
+    }, {
+        $set: {
+            username: username,
+            name: name,
+            surname: surname,
+            email: email
+        }
+    })
+} 
