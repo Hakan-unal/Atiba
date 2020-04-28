@@ -1,5 +1,6 @@
 const userModel = require("../models/user");
 const sessionstorage = require('sessionstorage');
+const logController = require("./log");
 
 
 exports.displayLoginPage = (req, res) => {
@@ -12,6 +13,7 @@ exports.postLoginPage = (req, res) => {
         if (result) {
             sessionstorage.setItem("user", JSON.stringify(result._id));
             sessionstorage.setItem("authentication", JSON.stringify(true));
+            logController.saveActionLocalStorage(req.body.username,"LOGIN")
             res.redirect("/user");
         } else {
             res.redirect("/login");
