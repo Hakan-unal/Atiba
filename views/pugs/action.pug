@@ -11,7 +11,7 @@ block content
                 th(scope="col").h5 # Operation
                 th(scope="col").h5 # Date
         tbody.tbody-dark
-            if objects !== []
+            if objects !== null
                 each object in objects
                     +createList(object)
             else
