@@ -1,15 +1,27 @@
+<!doctype html>
 html(lang="en")
 
     include ../includes/head
 
     body.bg-dark
        
-        .container
-            include ../includes/navbar
-            hr.bg-white.w-100
+        .row
+            .col-1
+                img(src="http://localhost:3000/img/banner.jpg" alt="banner" style="position:fixed; width:100px; height:100%; left:0px; top: 125px;")
+            .col-10
+                .container
+                    include ../includes/navbar
+                    hr.bg-white.w-100
         
-        .container.my-5
-            block content
+                .container.my-5
+                    block content
+
+            .col-1
+                img(src="http://localhost:3000/img/banner.jpg" alt="banner" style="position:fixed; width:100px; height:100%; right:0px; top: 125px;")
+
+
+        
+        
 
     include ../includes/scripts
         
