@@ -1,8 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
+
+
     const checkBox = document.querySelector("#checkbox");
     const form = document.querySelector("#loginform");
     const username = document.querySelector("#usernamebox");
     const password = document.querySelector("#passwordbox");
+    const progresBar = document.querySelector("#progresBar");
+
+
+
+
 
     const saveUserLocalStorage = (name, password) => {
         const user = [];
@@ -16,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     form.addEventListener("submit", () => {
+        progresBar.setAttribute("class", "progress");
         if (checkBox.checked) {
             saveUserLocalStorage(username.value, password.value);
         } else {
@@ -30,6 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
         password.value = user[0].password;
         checkBox.checked = true;
     }
+
+
+
 
 });
 
