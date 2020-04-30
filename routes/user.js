@@ -11,11 +11,19 @@ const accountController = require("../controllers/user/account");
 const actionController = require("../controllers/user/action");
 const signOutController = require("../controllers/user/sign-out");
 const covid19Controller = require("../controllers/user/covid-19");
-const documentationController=require("../controllers/user/documentation");
+const documentationController = require("../controllers/user/documentation");
 
 router.get("/", userController.displayUserPage);
 
 router.get("/movies", moviesController.displayMoviesPage);
+router.get("/movies/all", moviesController.displayAllMoviesPage);
+router.get("/movies/top250", moviesController.displayTop250Page);
+router.get("/movies/netflix", moviesController.displayNetflixPage);
+router.get("/movies/toprated", moviesController.displayTopratedPage);
+router.get("/movies/comics", moviesController.displayComicsPage);
+router.get("/movies/selector", moviesController.displaySmartSelectorPage);
+
+
 
 router.get("/events", eventsController.displayEventsPage);
 
