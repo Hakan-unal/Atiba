@@ -4,7 +4,15 @@ const logController = require("./log");
 
 
 exports.displayLoginPage = (req, res) => {
-    res.render("./pugs/login", { title: "Login", isAuthentication: false });
+    const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+
+    if (isAuthen !== true) {
+        res.render("./pugs/login", { title: "Login", isAuthentication: isAuthen });
+    } else {
+        res.redirect("/user");
+        const date = new Date();
+        logController.saveLocalStorage("GET", date, "/user")
+    }
 }
 
 
@@ -13,7 +21,7 @@ exports.postLoginPage = (req, res) => {
         if (result) {
             sessionstorage.setItem("user", JSON.stringify(result._id));
             sessionstorage.setItem("authentication", JSON.stringify(true));
-            logController.saveActionLocalStorage(req.body.username,"LOGIN")
+            logController.saveActionLocalStorage(req.body.username, "LOGIN")
             res.redirect("/user");
         } else {
             res.redirect("/login");

@@ -1,7 +1,16 @@
 extends ../../layouts/main.pug 
 
-include ../../mixins/action
+include ../../mixins/movies
+
+
 
 block content
+      .row    
+            
+            if movies !== null
+                  each movie in movies
+                        .col-lg-4.col-md-6
+                               +createList(movie)
+            else
      
-      h1.text-light movies
+      

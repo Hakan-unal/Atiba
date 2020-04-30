@@ -1,5 +1,8 @@
 const logController = require("../log");
 const sessionstorage = require('sessionstorage');
+const moviesModel = require("../../models/movies");
+const database = require("../../utility/database");
+
 
 
 
@@ -16,17 +19,33 @@ exports.displayMoviesPage = (req, res) => {
 }
 
 
+
 exports.displayAllMoviesPage = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/movies", { title: "All Movies", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/all")
+    const display = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            res.render("./pugs/movies/movies", { title: "All Movies", isAuthentication: isAuthen, movies: movies });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/all")
+        }
     }
+
+    return db.collection("wmovies")
+        .find({ category: 4 })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            display(movies);
+        })
+
+
+
 }
+
 
 
 exports.displayTop250Page = (req, res) => {
@@ -42,6 +61,7 @@ exports.displayTop250Page = (req, res) => {
 }
 
 
+
 exports.displayNetflixPage = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
@@ -53,6 +73,7 @@ exports.displayNetflixPage = (req, res) => {
         logController.saveLocalStorage("GET", date, "/user/movies/netflix")
     }
 }
+
 
 
 exports.displayTopratedPage = (req, res) => {
@@ -68,6 +89,7 @@ exports.displayTopratedPage = (req, res) => {
 }
 
 
+
 exports.displayComicsPage = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
@@ -79,6 +101,7 @@ exports.displayComicsPage = (req, res) => {
         logController.saveLocalStorage("GET", date, "/user/movies/comics")
     }
 }
+
 
 
 exports.displaySmartSelectorPage = (req, res) => {
