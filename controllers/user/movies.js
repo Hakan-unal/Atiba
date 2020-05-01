@@ -30,7 +30,6 @@ exports.displayAction = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
             res.render("./pugs/movies/action", { title: "Action", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/action")
@@ -58,8 +57,7 @@ exports.displayAnimation = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/animation", { title: "Animation", isAuthentication: isAuthen });
+            res.render("./pugs/movies/animation", { title: "Animation", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/animation")
         }
@@ -86,8 +84,7 @@ exports.displayDrama = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/drama", { title: "Drama", isAuthentication: isAuthen });
+            res.render("./pugs/movies/drama", { title: "Drama", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/drama")
         }
@@ -114,8 +111,7 @@ exports.displayAdventure = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/adventure", { title: "Adventure", isAuthentication: isAuthen });
+            res.render("./pugs/movies/adventure", { title: "Adventure", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/adventure")
         }
@@ -142,8 +138,7 @@ exports.displayScifi = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/sci-fi", { title: "Sci-fi", isAuthentication: isAuthen });
+            res.render("./pugs/movies/sci-fi", { title: "Sci-fi", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/sci-fi")
         }
@@ -170,8 +165,7 @@ exports.displayComedy = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/comedy", { title: "Comedy", isAuthentication: isAuthen });
+            res.render("./pugs/movies/comedy", { title: "Comedy", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/comedy")
         }
@@ -198,8 +192,7 @@ exports.displayMusic = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/music", { title: "Music", isAuthentication: isAuthen });
+            res.render("./pugs/movies/music", { title: "Music", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/music")
         }
@@ -228,8 +221,7 @@ exports.displayHorror = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/horror", { title: "Horror", isAuthentication: isAuthen });
+            res.render("./pugs/movies/horror", { title: "Horror", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/horror")
         }
@@ -256,8 +248,7 @@ exports.displayRomance = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/romance", { title: "Romance", isAuthentication: isAuthen });
+            res.render("./pugs/movies/romance", { title: "Romance", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/romance")
         }
@@ -284,8 +275,7 @@ exports.displayFantasy = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/fantasy", { title: "Fantasy", isAuthentication: isAuthen });
+            res.render("./pugs/movies/fantasy", { title: "Fantasy", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/fantasy")
         }
@@ -312,8 +302,7 @@ exports.displayFamily = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/family", { title: "Family", isAuthentication: isAuthen });
+            res.render("./pugs/movies/family", { title: "Family", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/family")
         }
@@ -337,7 +326,6 @@ exports.displayToprated = (req, res) => {
 
 
     const model = (movies) => {
-        console.log(movies);
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
@@ -367,7 +355,6 @@ exports.displayTop50 = (req, res) => {
 
 
     const model = (movies) => {
-        console.log(movies);
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
@@ -404,8 +391,7 @@ exports.displayComics = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
-            res.render("./pugs/movies/comics", { title: "Comics", isAuthentication: isAuthen });
+            res.render("./pugs/movies/comics", { title: "Comics", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/comics")
         }
