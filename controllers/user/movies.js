@@ -1,6 +1,5 @@
 const logController = require("../log");
 const sessionstorage = require('sessionstorage');
-const moviesModel = require("../../models/movies");
 const database = require("../../utility/database");
 
 
@@ -22,160 +21,306 @@ exports.displayMoviesPage = (req, res) => {
 
 exports.displayAction = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/action", { title: "Action", isAuthentication: isAuthen});
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/action")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/action", { title: "Action", isAuthentication: isAuthen, movies: movies });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/action")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Action" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayAnimation = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/animation", { title: "Animation", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/animation")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/animation", { title: "Animation", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/animation")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Animation" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayDrama = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/drama", { title: "Drama", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/drama")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/drama", { title: "Drama", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/drama")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Drama" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayAdventure = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/adventure", { title: "Adventure", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/adventure")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/adventure", { title: "Adventure", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/adventure")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Adventure" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayScifi = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/sci-fi", { title: "Sci-fi", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/sci-fi")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/sci-fi", { title: "Sci-fi", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/sci-fi")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Sci-Fi" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayComedy = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/comedy", { title: "Comedy", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/comedy")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/comedy", { title: "Comedy", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/comedy")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Comedy" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayMusic = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/music", { title: "Music", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/music")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/music", { title: "Music", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/music")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Music" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
+
+
 }
 
 
 
 exports.displayHorror = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/horror", { title: "Horror", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/horror")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/horror", { title: "Horror", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/horror")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Horror" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayRomance = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/romance", { title: "Romance", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/romance")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/romance", { title: "Romance", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/romance")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Romance" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayFantasy = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/fantasy", { title: "Fantasy", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/fantasy")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/fantasy", { title: "Fantasy", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/fantasy")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Fantasy" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayFamily = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/family", { title: "Family", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/family")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/family", { title: "Family", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/family")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Family" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displayToprated = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
     if (isAuthen !== true) {
         res.redirect("/login");
@@ -184,12 +329,14 @@ exports.displayToprated = (req, res) => {
         const date = new Date();
         logController.saveLocalStorage("GET", date, "/user/movies/toprated")
     }
+
 }
 
 
 
 exports.displayTop50 = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
     if (isAuthen !== true) {
         res.redirect("/login");
@@ -204,20 +351,34 @@ exports.displayTop50 = (req, res) => {
 
 exports.displayComics = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/comics", { title: "Comics", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/comics")
+
+    const model = (movies) => {
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            console.log(movies);
+            res.render("./pugs/movies/comics", { title: "Comics", isAuthentication: isAuthen });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/comics")
+        }
     }
+
+    db.collection("toprated")
+        .find({ Main_Genre: "Comics" })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
 }
 
 
 
 exports.displaySelector = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+    const db = database.getdb();
 
     if (isAuthen !== true) {
         res.redirect("/login");
