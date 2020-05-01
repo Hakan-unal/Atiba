@@ -5,6 +5,7 @@ const database = require("../../utility/database");
 
 
 
+
 exports.displayMoviesPage = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
@@ -16,6 +17,7 @@ exports.displayMoviesPage = (req, res) => {
         logController.saveLocalStorage("GET", date, "/user/movies")
     }
 }
+
 
 
 
@@ -46,6 +48,7 @@ exports.displayAction = (req, res) => {
 
 
 
+
 exports.displayAnimation = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
     const db = database.getdb();
@@ -70,6 +73,7 @@ exports.displayAnimation = (req, res) => {
             model(movies);
         })
 }
+
 
 
 
@@ -100,6 +104,7 @@ exports.displayDrama = (req, res) => {
 
 
 
+
 exports.displayAdventure = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
     const db = database.getdb();
@@ -124,6 +129,7 @@ exports.displayAdventure = (req, res) => {
             model(movies);
         })
 }
+
 
 
 
@@ -154,6 +160,7 @@ exports.displayScifi = (req, res) => {
 
 
 
+
 exports.displayComedy = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
     const db = database.getdb();
@@ -178,6 +185,7 @@ exports.displayComedy = (req, res) => {
             model(movies);
         })
 }
+
 
 
 
@@ -210,6 +218,7 @@ exports.displayMusic = (req, res) => {
 
 
 
+
 exports.displayHorror = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
     const db = database.getdb();
@@ -234,6 +243,7 @@ exports.displayHorror = (req, res) => {
             model(movies);
         })
 }
+
 
 
 
@@ -264,6 +274,7 @@ exports.displayRomance = (req, res) => {
 
 
 
+
 exports.displayFantasy = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
     const db = database.getdb();
@@ -288,6 +299,7 @@ exports.displayFantasy = (req, res) => {
             model(movies);
         })
 }
+
 
 
 
@@ -318,19 +330,34 @@ exports.displayFamily = (req, res) => {
 
 
 
+
 exports.displayToprated = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
     const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/toprated", { title: "Toprated", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/toprated")
+
+    const model = (movies) => {
+        console.log(movies);
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            res.render("./pugs/movies/toprated", { title: "Toprated", isAuthentication: isAuthen, movies: movies });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/toprated")
+        }
     }
 
+
+    db.collection("wtoprated")
+        .find({ category: 9 })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+            model(movies);
+        })
+
 }
+
 
 
 
@@ -338,14 +365,33 @@ exports.displayTop50 = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
     const db = database.getdb();
 
-    if (isAuthen !== true) {
-        res.redirect("/login");
-    } else {
-        res.render("./pugs/movies/top50", { title: "Top 50", isAuthentication: isAuthen });
-        const date = new Date();
-        logController.saveLocalStorage("GET", date, "/user/movies/top50")
+
+    const model = (movies) => {
+        console.log(movies);
+        if (isAuthen !== true) {
+            res.redirect("/login");
+        } else {
+            res.render("./pugs/movies/top50", { title: "Top 50", isAuthentication: isAuthen, movies: movies });
+            const date = new Date();
+            logController.saveLocalStorage("GET", date, "/user/movies/top50")
+        }
     }
+
+
+    db.collection("wtop250")
+        .find({ category: 8 })
+        .toArray((err, movies) => {
+            if (err) {
+            }
+
+            let array = [];
+            for (let i = 0; i < 50; i++) {
+                array.push(movies[i]);
+            }
+            model(array);
+        })
 }
+
 
 
 
@@ -373,6 +419,7 @@ exports.displayComics = (req, res) => {
             model(movies);
         })
 }
+
 
 
 
