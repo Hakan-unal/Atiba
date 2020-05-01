@@ -13,7 +13,10 @@ const signOutController = require("../controllers/user/sign-out");
 const covid19Controller = require("../controllers/user/covid-19");
 const documentationController = require("../controllers/user/documentation");
 
+
+
 router.get("/", userController.displayUserPage);
+
 
 router.get("/movies", moviesController.displayMoviesPage);
 router.get("/movies/action", moviesController.displayAction);
@@ -33,6 +36,22 @@ router.get("/movies/comics", moviesController.displayComics);
 router.get("/movies/selector", moviesController.displaySelector);
 
 
+router.get("/books", booksController.displayBooksPage);
+router.get("/books/politics", booksController.displayPolitics);
+router.get("/books/economy", booksController.displayEconomy);
+router.get("/books/computer", booksController.displayComputer);
+router.get("/books/history", booksController.displayHistory);
+router.get("/books/children", booksController.displayChildren);
+router.get("/books/crime", booksController.displayCrime);
+router.get("/books/art", booksController.displayArt);
+router.get("/books/education", booksController.displayEducation);
+router.get("/books/selector", booksController.displaySelector);
+router.get("/books/bestseller", booksController.displayBestseller);
+
+
+
+
+
 
 
 
@@ -42,7 +61,7 @@ router.get("/events", eventsController.displayEventsPage);
 
 router.get("/cinema", cinemaController.displayCinemaPage);
 
-router.get("/books", booksController.displayBooksPage);
+
 
 router.get("/covid-19", covid19Controller.displayCovid19Page);
 

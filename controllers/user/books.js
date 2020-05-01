@@ -31,7 +31,7 @@ exports.displayArt = (req, res) => {
 
 
 
-exports.displayEducation=(req,res)=>{
+exports.displayEducation = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
 
@@ -46,7 +46,7 @@ exports.displayEducation=(req,res)=>{
 
 
 
-exports.displaySelector=(req,res)=>{
+exports.displaySelector = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
 
@@ -61,7 +61,7 @@ exports.displaySelector=(req,res)=>{
 
 
 
-exports.displayBestseller=(req,res)=>{
+exports.displayBestseller = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
 
@@ -78,7 +78,7 @@ exports.displayBestseller=(req,res)=>{
 
 
 
-exports.displayPolitics=(req,res)=>{
+exports.displayPolitics = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
 
@@ -93,7 +93,7 @@ exports.displayPolitics=(req,res)=>{
 
 
 
-exports.displayEconomy=(req,res)=>{
+exports.displayEconomy = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
 
@@ -108,7 +108,7 @@ exports.displayEconomy=(req,res)=>{
 
 
 
-exports.displayHistory=(req,res)=>{
+exports.displayHistory = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
 
@@ -123,7 +123,7 @@ exports.displayHistory=(req,res)=>{
 
 
 
-exports.displayChildren=(req,res)=>{
+exports.displayChildren = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
 
@@ -139,7 +139,7 @@ exports.displayChildren=(req,res)=>{
 
 
 
-exports.displayCrime=(req,res)=>{
+exports.displayCrime = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
 
 
@@ -149,5 +149,20 @@ exports.displayCrime=(req,res)=>{
         res.render("./pugs/books/crime", { title: "Crime", isAuthentication: isAuthen });
         const date = new Date();
         logController.saveLocalStorage("GET", date, "/user/books/crime")
+    }
+}
+
+
+
+exports.displayComputer = (req, res) => {
+    const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+
+
+    if (isAuthen !== true) {
+        res.redirect("/login");
+    } else {
+        res.render("./pugs/books/computer", { title: "Computer", isAuthentication: isAuthen });
+        const date = new Date();
+        logController.saveLocalStorage("GET", date, "/user/books/computer")
     }
 }

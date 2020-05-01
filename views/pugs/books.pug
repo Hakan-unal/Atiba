@@ -1,4 +1,73 @@
 extends ../layouts/main.pug 
 
 block content
-    .h1.text-light Books
+    .row.mt-5
+        .col-4
+            input.w-100.h-100(type="text" placeholder="Aradığınız filmin adını giriniz")
+        .col-2
+            input.btn.btn-outline-light.btn-lg(type="button" value="Search")
+        
+            
+    hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
+    .progress#progresBar.h-100.d-none
+        .progress-bar.progress-bar-striped.progress-bar-animated.bg-dark(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;") 
+            p.h4 Loading....
+        
+        
+
+    .row.mt-2
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/selector")
+                    img.card-img-top(src="http://localhost:3000/img/movies.png")
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/bestseller")
+                    img.card-img-top(src="http://localhost:3000/img/top250.png")
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/crime")
+                    img.card-img-top(src="http://localhost:3000/img/netflix.png")
+    
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/art")
+                    img.card-img-top(src="http://localhost:3000/img/toprated.png")
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/children")
+                    img.card-img-top(src="http://localhost:3000/img/comics.png")
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/education")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/computer")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/history")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/economy")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+        
+        .col-lg-3.col-md-4.mt-5
+            .card
+                a(href="books/politics")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+        
+
+
+block scripts
+        script(src="http://localhost:3000/js/books.js") 
