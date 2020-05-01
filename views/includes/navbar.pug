@@ -1,12 +1,12 @@
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
         if isAuthentication
             a.navbar-brand.mr-5(href="/user")
-                svg.bi.bi-house-door(width="4em" height="4em" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                svg.bi.bi-house-door.text-warning(width="4em" height="4em" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
                         path(fill-rule="evenodd" d="M7.646 1.146a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5H9.5a.5.5 0 01-.5-.5v-4H7v4a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 01.5-.5h3a.5.5 0 01.5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" clip-rule="evenodd")
                             path(fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd")
         else    
             a.navbar-brand.mr-5(href="/") 
-                svg.bi.bi-house-door(width="4em" height="4em" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
+                svg.bi.bi-house-door.text-warning(width="4em" height="4em" viewBox="0 0 15 15" fill="currentColor" xmlns="http://www.w3.org/2000/svg")
                     path(fill-rule="evenodd" d="M7.646 1.146a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5H9.5a.5.5 0 01-.5-.5v-4H7v4a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 01.5-.5h3a.5.5 0 01.5.5v4h3.5V7.707L8 2.207l-5.5 5.5z" clip-rule="evenodd")
                         path(fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd")
         button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation")
@@ -14,20 +14,20 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
 
         .collapse.navbar-collapse#navbarColor01
             if isAuthentication
-                ul.navbar-nav.mr-auto.mt-1.nav-tabs.border-0
+                ul.navbar-nav.mr-auto.mt-1.nav-tabs.border-warning.rounded-pill
 
                     li.nav-item
-                        a.nav-link.text-light.h5(href="/user/movies") Movies    
+                        a.nav-link.text-warning.h5.font-weight-bolder.rounded-pill(href="/user/movies") Movies    
                     li.nav-item
-                        a.nav-link.text-light.h5(href="/user/events") Events
+                        a.nav-link.text-warning.h5.font-weight-bolder.rounded-pill(href="/user/events") Events
                     li.nav-item
-                        a.nav-link.text-light.h5(href="/user/cinema") Cinema    
+                        a.nav-link.text-warning.h5.font-weight-bolder.rounded-pill(href="/user/cinema") Cinema    
                     li.nav-item
-                        a.nav-link.text-light.h5(href="/user/books") Books
+                        a.nav-link.text-warning.h5.font-weight-bolder.rounded-pill(href="/user/books") Books
                     li.nav-item
-                        a.nav-link.text-light.h5(href="/user/covid-19") Covid-19
+                        a.nav-link.text-warning.h5.font-weight-bolder.rounded-pill(href="/user/covid-19") Covid-19
                     li.nav-item
-                        a.nav-link.text-light.h5(href="/user/contact") Contact
+                        a.nav-link.text-warning.h5.font-weight-bolder.rounded-pill(href="/user/contact") Contact
                     
             ul.navbar-nav.ml-auto
                 if isAuthentication
@@ -44,8 +44,4 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
                     li.nav-item.mb-2.mr-2
                         a.btn.btn-warning.btn-lg(href="/sign-up") Sign Up
                     li.nav-item.mb-2.mr-2
-                        a.btn.btn-outline-warning.btn-lg(href="/login") Login
-
-                        
-                    
-                
+                        a.btn.btn-outline-warning.btn-lg(href="/login") Login       

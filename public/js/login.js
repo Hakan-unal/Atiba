@@ -38,9 +38,4 @@ document.addEventListener("DOMContentLoaded", () => {
         password.value = user[0].password;
         checkBox.checked = true;
     }
-
-
-
-
 });
-

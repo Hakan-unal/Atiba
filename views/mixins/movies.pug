@@ -1,7 +1,7 @@
 mixin createList(movie)
-    .card
-        .card-header Header
+    .card.mb-3
+        .card-header #{movie.title}
         .card-body 
-            .card-title Title
-            .card-text Text
+            .card-title #{movie.studio}
+            .card-text #{movie.worldwide_gross}
         .card-footer Footer

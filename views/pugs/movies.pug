@@ -2,31 +2,83 @@ extends ../layouts/main.pug
 
 
 block content
-
-    .row
-        .col-lg-4.col-md-6
-            .card
-                a(href="movies/all")
-                    img.card-img-top(src="http://localhost:3000/img/movies.png" style="width:325px; height:150px;")
-        .col-lg-4.col-md-6
-            .card
-                a(href="movies/top250")
-                    img.card-img-top(src="http://localhost:3000/img/top250.png" style="width:325px; height:150px;")
-        .col-lg-4.col-md-6
-            .card
-                a(href="movies/netflix")
-                    img.card-img-top(src="http://localhost:3000/img/netflix.png" style="width:325px; height:150px;")
     
-    .row.mt-3
-        .col-lg-4.col-md-6
-            .card
-                a(href="movies/toprated")
-                    img.card-img-top(src="http://localhost:3000/img/toprated.png" style="width:325px; height:150px;")
-        .col-lg-4.col-md-6
-            .card
-                a(href="movies/comics")
-                    img.card-img-top(src="http://localhost:3000/img/comics.png" style="width:325px; height:150px;")
-        .col-lg-4.col-md-6
+    .row.mt-5
+        .col-4
+            input.w-100.h-100(type="text" placeholder="Aradığınız filmin adını giriniz")
+        .col-2
+            input.btn.btn-outline-light.btn-lg(type="button" value="Search")
+        
+            
+    hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
+    .progress#progresBar.h-100.d-none
+        .progress-bar.progress-bar-striped.progress-bar-animated.bg-dark(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;") 
+            p.h4 Loading....
+        
+        
+
+    .row.mt-2
+        .col-lg-4.col-md-6.mt-5
             .card
                 a(href="movies/selector")
+                    img.card-img-top(src="http://localhost:3000/img/movies.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/top50")
+                    img.card-img-top(src="http://localhost:3000/img/top250.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/toprated")
+                    img.card-img-top(src="http://localhost:3000/img/netflix.png" style="width:325px; height:150px;")
+    
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/animation")
+                    img.card-img-top(src="http://localhost:3000/img/toprated.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/drama")
+                    img.card-img-top(src="http://localhost:3000/img/comics.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/adventure")
                     img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/sci_fi")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/comedy")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/music")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/horror")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/romance")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/fantasy")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/family")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        .col-lg-4.col-md-6.mt-5
+            .card
+                a(href="movies/action")
+                    img.card-img-top(src="http://localhost:3000/img/smartselector.png" style="width:325px; height:150px;")
+        
+
+
+
+
+block scripts
+        script(src="http://localhost:3000/js/movies.js") 
