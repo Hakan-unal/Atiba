@@ -1,6 +1,11 @@
 extends ../../layouts/main.pug 
 
+include ../../mixins/top50
 
 block content
      
-      h1.text-light #{movies[0].Name}
+      .row
+            if movies !== null
+                  each movie in movies
+                        .col-lg-4.col-md-6.my-3
+                              +createList(movie)

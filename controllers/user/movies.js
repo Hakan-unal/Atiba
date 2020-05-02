@@ -366,8 +366,8 @@ exports.displayTop50 = (req, res) => {
     }
 
 
-    db.collection("wtop250")
-        .find({ category: 8 })
+    db.collection("top250")
+        .find({ Rank: { $lte: 50 } })
         .toArray((err, movies) => {
             if (err) {
             }
