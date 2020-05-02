@@ -1,6 +1,14 @@
 extends ../../layouts/main.pug 
 
+include ../../mixins/books.pug
+
 
 block content
-
-    .h1.text-light bestseller
+    
+      .row
+            if books !== null
+                  each book in books
+                        .col-lg-3.col-md-4.my-3
+                              +createList(book)
+            else 
+                .text-center.text-light.h1 No Documents

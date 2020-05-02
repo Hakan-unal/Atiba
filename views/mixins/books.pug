@@ -1,0 +1,10 @@
+mixin createList(book)
+    .card.mb-3.bg-secondary.border-0
+        .card-header.text-center.border-0.far.fa-star.fa-spinner.fa-spin.fa-1x.text-dark
+        img.card-img-top(src="http://localhost:3000/img/kitaplar.jpeg")
+        .card-body
+            .card-title.border-0.text-center
+                b.card-header.text-center.text-white.border-0 Name: #{book.title}
+                    p.text.center.text-light Price: #{book.price}
+                    p.text-center.text-light Yayıncı: #{book.publisher}
+                    a.stretched-link(href=`${book.amazon_product_url}` target="_blank")
