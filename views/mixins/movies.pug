@@ -1,9 +1,8 @@
 mixin createList(movie)
     .card.mb-3.bg-secondary.border-0
         .card-header.text-center.border-0.far.fa-star.fa-spinner.fa-spin.fa-1x.text-dark
-        .card-header.text-center.text-white.border-0.font-weight-bold.h4 #{movie.title}
         img.card-img-top(src="http://localhost:3000/img/filmler.jpeg")
         .card-body
             .card-title.border-0.text-center
-                b.lead.text-dark.text-uppercase.font-weight-bold #{movie.studio} 
-                            a.stretched-link(href="https://www.imdb.com/?ref_=nv_home" target="_blank")           
+                b.card-header.text-center.text-white.border-0.h6 #{movie.title}
+                    a.stretched-link(href="https://www.imdb.com/?ref_=nv_home" target="_blank")           
