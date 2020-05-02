@@ -1,3 +1,7 @@
 mixin createList(movie)
-
-    h2 #{movie.Name}
+    
+    td #{movie.Rank}
+    td 
+        img(src=`${movie.img}` style="width:75px")
+    td #{movie.Name}
+    td #{movie.Ratings}

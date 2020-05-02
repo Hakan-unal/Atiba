@@ -6,6 +6,16 @@ block content
      
       .row
             if movies !== null
-                  each movie in movies
-                        .col-lg-4.col-md-6.my-3
-                              +createList(movie)
+                  table.table.table-dark
+                        thead
+                              tr
+                                    th(scope="col") #
+                                    th(scope="col") #Poster
+                                    th(scope="col") #Title
+                                    th(scope="col") #Rating
+                        tbody
+                              each movie in movies
+                                    tr
+                                          +createList(movie)
+            else 
+                .text-center.text-light.h1 No Documents
