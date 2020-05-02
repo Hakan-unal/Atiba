@@ -1,0 +1,11 @@
+mixin createList(event)
+    
+    .card.mb-3.bg-secondary.border-0
+        img.card-img-top.w-100.img-thumbnail(src=`${event.img}`)
+        .card-body
+            .card-title.border-0.text-center
+                b.card-header.text-center.text-white.border-0.h6 #{event.name}
+                    a.stretched-link(href="https://www.imdb.com/?ref_=nv_home" target="_blank")
+
+block scripts
+    script(src="http://localhost:3000/js/events.js")  
