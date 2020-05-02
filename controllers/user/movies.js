@@ -358,7 +358,6 @@ exports.displayTop50 = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            console.log(movies);
             res.render("./pugs/movies/top50", { title: "Top 50", isAuthentication: isAuthen, movies: movies });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/movies/top50")
@@ -371,7 +370,12 @@ exports.displayTop50 = (req, res) => {
         .toArray((err, movies) => {
             if (err) {
             }
-            model(movies);
+            let array = [1];
+            movies.forEach(movie => {
+                array[movie.Rank] = movie;
+            });
+            array.splice(0, 1);
+            model(array);
         })
 }
 
