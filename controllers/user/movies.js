@@ -421,3 +421,16 @@ exports.displaySelector = (req, res) => {
         logController.saveLocalStorage("GET", date, "/user/movies/selector")
     }
 }
+
+
+exports.displayMovieAndTv = (req, res) => {
+    const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
+
+    if (isAuthen !== true) {
+        res.redirect("/login");
+    } else {
+        res.render("./pugs/movies/movietv", { title: "Movie & TV Series", isAuthentication: isAuthen });
+        const date = new Date();
+        logController.saveLocalStorage("GET", date, "/user/movies/movie_tv")
+    }
+}

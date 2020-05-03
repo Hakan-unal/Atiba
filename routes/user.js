@@ -19,21 +19,9 @@ router.get("/", userController.displayUserPage);
 
 
 router.get("/movies", moviesController.displayMoviesPage);
-router.get("/movies/action", moviesController.displayAction);
-router.get("/movies/animation", moviesController.displayAnimation);
-router.get("/movies/drama", moviesController.displayDrama);
-router.get("/movies/adventure", moviesController.displayAdventure);
-router.get("/movies/sci_fi", moviesController.displayScifi);
-router.get("/movies/comedy", moviesController.displayComedy);
-router.get("/movies/music", moviesController.displayMusic);
-router.get("/movies/horror", moviesController.displayHorror);
-router.get("/movies/romance", moviesController.displayRomance);
-router.get("/movies/fantasy", moviesController.displayFantasy);
-router.get("/movies/family", moviesController.displayFamily);
-router.get("/movies/toprated", moviesController.displayToprated);
 router.get("/movies/top50", moviesController.displayTop50);
-router.get("/movies/comics", moviesController.displayComics);
 router.get("/movies/selector", moviesController.displaySelector);
+router.get("/movies/movietv",moviesController.displayMovieAndTv);
 
 
 router.get("/books", booksController.displayBooksPage);
@@ -49,37 +37,30 @@ router.get("/books/selector", booksController.displaySelector);
 router.get("/books/bestseller", booksController.displayBestseller);
 
 
-
-
-
-
-
-
-
-
 router.get("/events", eventsController.displayEventsPage);
+
 
 router.get("/cinema", cinemaController.displayCinemaPage);
 
 
-
 router.get("/covid-19", covid19Controller.displayCovid19Page);
+
 
 router.get("/contact", contactController.displayContactPage);
 router.post("/contact", contactController.postContactPage);
 
+
 router.get("/account", accountController.displayAccountPage);
 router.post("/account", accountController.postAccountPage);
 
+
 router.get("/actions", actionController.displayActionPage);
+
 
 router.get("/documentation", documentationController.displayDocumentationPage);
 
+
 router.get("/sign-out", signOutController.displaySignOutPage);
-
-
-
-
 
 
 module.exports = router;
