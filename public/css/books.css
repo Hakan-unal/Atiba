@@ -1,7 +1,6 @@
-.card:hover{
-font-size: larger;
-color: black;
-transition: font-size 2s;
+.card:hover .card-body{
+font-size: x-large;
+transition: font-size 3s;
 }
 
 .card-img-top{
