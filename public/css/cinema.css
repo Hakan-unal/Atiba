@@ -1,0 +1,11 @@
+.card:hover{
+    font-size: x-large;
+    color: black;
+    transition: font-size 2s;
+    height: 250px;
+    }
+    
+.card-img-top{
+        box-shadow: 4px 8px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+

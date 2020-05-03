@@ -10,3 +10,4 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
 })
+console.log("Hata")
