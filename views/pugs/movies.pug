@@ -11,8 +11,8 @@ block content
         
             
     hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
-    .progress#progresBar.h-100.d-none
-        .progress-bar.progress-bar-striped.progress-bar-animated.bg-dark(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;") 
+    .progress#progresBar.h-100.d-none.bg-dark
+        .progress-bar.progress-bar-striped.progress-bar-animated.bg-dark.rounded-pill(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;") 
             p.h4 Loading....
         
         
@@ -94,4 +94,4 @@ block content
 
 
 block scripts
-        script(src="http://localhost:3000/js/progresBar.js") 
+        script(src="http://localhost:3000/js/movies.js") 

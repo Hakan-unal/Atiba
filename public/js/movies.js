@@ -5,9 +5,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     container.addEventListener("click", (event) => {
         if(event.target.className==="card-img-top"){
-            progresBar.setAttribute("class","progress h-100")
+            progresBar.setAttribute("class","progress h-100 bg-dark")
         }
     })
 
 })
-console.log("Hata")
