@@ -33,12 +33,162 @@
         {
             "platform": "NETFLIX",
             "type": "Film",
+            "name": "Inception",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/inception-2010",
+            "img": "https://img.reelgood.com/content/movie/2208ea58-f84f-48ed-b387-13dd836dc446/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Spider-Man: Into the Spider-Verse",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/spider-man-into-the-spider-verse-2018",
+            "img": "https://img.reelgood.com/content/movie/f3d91837-a2ff-4250-99b0-e8c9c036a23a/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Raiders of the Lost Ark",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/raiders-of-the-lost-ark-1981",
+            "img": "https://img.reelgood.com/content/movie/4d949e14-b08b-47fb-bab0-22c732dbedf3/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Inglourious Basterds",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/inglourious-basterds-2009",
+            "img": "https://img.reelgood.com/content/movie/566ade1b-7fb8-41eb-8b51-f010c3a246ac/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Back to the Future",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/back-to-the-future-1985",
+            "img": "https://img.reelgood.com/content/movie/667a030c-a4dc-4c34-8577-6898478ab435/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Monty Python ant the Holy Grail",
+            "ktg1": "Action",
+            "ktg2": "Adventure ",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/monty-python-and-the-holy-grail-1975",
+            "img": "https://img.reelgood.com/content/movie/cb7f9b74-5876-4f1b-a1d6-496246b229f8/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Once Upon a Time in the West",
+            "ktg1": "Action",
+            "ktg2": "Adventure ",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/once-upon-a-time-in-the-west-1968",
+            "img": "https://img.reelgood.com/content/movie/86cf55a6-b61e-4d90-8818-417f09bebc96/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Indiana Jones and the Last Crusade",
+            "ktg1": "Action",
+            "ktg2": "Adventure ",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/indiana-jones-and-the-last-crusade-1989",
+            "img": "https://img.reelgood.com/content/movie/2dfccc2c-42cc-4a06-81a7-8d1da3284283/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Train to Busan",
+            "ktg1": "Action",
+            "ktg2": "Adventure ",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/movie/train-to-busan-2016",
+            "img": "https://img.reelgood.com/content/movie/c3dc80ed-8217-40f1-a2d7-6768d06360f1/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Incredibles 2",
+            "ktg1": "Action",
+            "ktg2": "Adventure ",
+            "ktg3": "Animation",
+            "url": "https://reelgood.com/movie/the-incredibles-2-2018",
+            "img": "https://img.reelgood.com/content/movie/5a932672-09c0-4268-96b9-9974b2dd2e9a/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
             "name": "Interstellar",
             "ktg1": "Sci-Fi",
             "ktg2": "Action",
             "ktg3": "Drama",
             "url": "https://www.netflix.com/watch/70305903?trackId=253788158&tctx=2%2C1%2Cfe2f3658-4b56-48b6-9eca-3af5250a5390-577242546%2Cc02b02a7-7a2c-4e07-9258-eb34d408562f_46656653X54XX1588506168817%2Cc02b02a7-7a2c-4e07-9258-eb34d408562f_ROOT",
             "img": "https://www.legendarytrips.com/wp-content/uploads/Interstellar_2014.jpg"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "The Good, the Bad and the Ugly",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/movie/the-good-the-bad-and-the-ugly-1966",
+            "img": "https://img.reelgood.com/content/movie/71ce5ee1-f2b4-4f88-9287-81d42a447d04/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "The Pianist",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/movie/the-pianist-2002",
+            "img": "https://img.reelgood.com/content/movie/88cc9e4e-d585-4fc3-87d7-5d3e90a7830a/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Inglourious Basterds",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/movie/inglourious-basterds-2009",
+            "img": "https://img.reelgood.com/content/movie/566ade1b-7fb8-41eb-8b51-f010c3a246ac/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Pan's Labyrinth",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/movie/pans-labyrinth-2006",
+            "img": "https://img.reelgood.com/content/movie/c028d6f7-d6d0-4a41-a3b6-a7c3b1b1b614/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "Film",
+            "name": "Once Upon a Time in the West",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/movie/once-upon-a-time-in-the-west-1968",
+            "img": "https://img.reelgood.com/content/movie/86cf55a6-b61e-4d90-8818-417f09bebc96/poster-780.webp"
         },
         {
             "platform": "NETFLIX",
