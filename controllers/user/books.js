@@ -1,8 +1,9 @@
 const logController = require("../log");
 const sessionstorage = require('sessionstorage');
 const database = require("../../utility/database");
+const arrayMethods = require('more-array-methods');
 
-
+arrayMethods();
 
 exports.displayBooksPage = (req, res) => {
     const isAuthen = JSON.parse(sessionstorage.getItem("authentication"));
@@ -28,7 +29,7 @@ exports.displayArt = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/art", { title: "Art", isAuthentication: isAuthen,books:books });
+            res.render("./pugs/books/art", { title: "Art", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/art")
         }
@@ -40,7 +41,7 @@ exports.displayArt = (req, res) => {
         .toArray((err, books) => {
             if (err) {
             }
-            model(books)
+            model(books.shuffle())
         })
 }
 
@@ -56,7 +57,7 @@ exports.displayEducation = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/education", { title: "Education", isAuthentication: isAuthen,books:books  });
+            res.render("./pugs/books/education", { title: "Education", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/education")
         }
@@ -68,7 +69,7 @@ exports.displayEducation = (req, res) => {
         .toArray((err, books) => {
             if (err) {
             }
-            model(books)
+            model(books.shuffle())
         })
 }
 
@@ -101,7 +102,7 @@ exports.displayBestseller = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/bestseller", { title: "Bestseller", isAuthentication: isAuthen,books:books  });
+            res.render("./pugs/books/bestseller", { title: "Bestseller", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/bestseller")
         }
@@ -114,7 +115,7 @@ exports.displayBestseller = (req, res) => {
         .toArray((err, books) => {
             if (err) {
             }
-            model(books)
+            model(books.shuffle())
         })
 }
 
@@ -132,7 +133,7 @@ exports.displayPolitics = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/politics", { title: "Politics", isAuthentication: isAuthen,books:books  });
+            res.render("./pugs/books/politics", { title: "Politics", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/politics")
         }
@@ -158,7 +159,7 @@ exports.displayEconomy = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/economy", { title: "Economy", isAuthentication: isAuthen,books:books  });
+            res.render("./pugs/books/economy", { title: "Economy", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/economy")
         }
@@ -170,7 +171,7 @@ exports.displayEconomy = (req, res) => {
         .toArray((err, books) => {
             if (err) {
             }
-            model(books)
+            model(books.shuffle())
         })
 }
 
@@ -186,7 +187,7 @@ exports.displayHistory = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/history", { title: "History", isAuthentication: isAuthen,books:books  });
+            res.render("./pugs/books/history", { title: "History", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/history")
         }
@@ -197,7 +198,7 @@ exports.displayHistory = (req, res) => {
         .toArray((err, books) => {
             if (err) {
             }
-            model(books)
+            model(books.shuffle())
         })
 }
 
@@ -213,7 +214,7 @@ exports.displayChildren = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/children", { title: "Children", isAuthentication: isAuthen,books:books  });
+            res.render("./pugs/books/children", { title: "Children", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/children")
         }
@@ -225,7 +226,7 @@ exports.displayChildren = (req, res) => {
         .toArray((err, books) => {
             if (err) {
             }
-            model(books)
+            model(books.shuffle())
         })
 }
 
@@ -242,7 +243,7 @@ exports.displayCrime = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/crime", { title: "Crime", isAuthentication: isAuthen,books:books  });
+            res.render("./pugs/books/crime", { title: "Crime", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/crime")
         }
@@ -253,7 +254,7 @@ exports.displayCrime = (req, res) => {
         .toArray((err, books) => {
             if (err) {
             }
-            model(books)
+            model(books.shuffle())
         })
 }
 
@@ -268,7 +269,7 @@ exports.displayComputer = (req, res) => {
         if (isAuthen !== true) {
             res.redirect("/login");
         } else {
-            res.render("./pugs/books/computer", { title: "Computer", isAuthentication: isAuthen,books:books  });
+            res.render("./pugs/books/computer", { title: "Computer", isAuthentication: isAuthen, books: books });
             const date = new Date();
             logController.saveLocalStorage("GET", date, "/user/books/computer")
         }
@@ -280,6 +281,6 @@ exports.displayComputer = (req, res) => {
         .toArray((err, books) => {
             if (err) {
             }
-            model(books)
+            model(books.shuffle())
         })
 }
