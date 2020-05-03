@@ -51,13 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
             content.innerHTML = `
             <table class="table table-dark">
                 <thead>
-                <tr>
-                    <th scope="col">#Poster</th>
-                    <th scope="col">#Name</th>
-                    <th scope="col">#Platform</th>
-                    <th scope="col">#Category</th>
-                    <th scope="col">#Type</th>
-                </tr>
+                
+                </thead>
                 <tbody id="table">
                 </tbody>
             </table>
