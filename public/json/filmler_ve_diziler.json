@@ -1022,7 +1022,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Better Call Saul",
             "ktg1": "Comedy",
             "ktg2": "Comedy",
@@ -1032,7 +1032,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Office",
             "ktg1": "Comedy",
             "ktg2": "Comedy",
@@ -1042,7 +1042,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Community",
             "ktg1": "Comedy",
             "ktg2": "Comedy",
@@ -1052,7 +1052,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Parks and Recreation",
             "ktg1": "Comedy",
             "ktg2": "Comedy",
@@ -1062,7 +1062,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Shameless",
             "ktg1": "Comedy",
             "ktg2": "Drama",
@@ -1072,7 +1072,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Peaky Blinders",
             "ktg1": "War",
             "ktg2": "Action",
@@ -1082,7 +1082,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The End of the F***ing World",
             "ktg1": "War",
             "ktg2": "Action",
@@ -1092,7 +1092,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Vietnam War",
             "ktg1": "War",
             "ktg2": "Action",
@@ -1102,7 +1102,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Dark Crystal: Age of Resistance",
             "ktg1": "War",
             "ktg2": "Drama",
@@ -1112,7 +1112,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Rise of Empires: Ottoman",
             "ktg1": "War",
             "ktg2": "Drama",
@@ -1122,7 +1122,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Money Heist",
             "ktg1": "Adventure",
             "ktg2": "Action",
@@ -1132,7 +1132,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Sherlock",
             "ktg1": "Adventure",
             "ktg2": "Action",
@@ -1142,7 +1142,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Attack on Titan",
             "ktg1": "Adventure",
             "ktg2": "Action",
@@ -1152,7 +1152,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Fullmetal Alchemist: Brotherhood",
             "ktg1": "Adventure",
             "ktg2": "Action",
@@ -1162,7 +1162,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Marvel's Daredevil",
             "ktg1": "Adventure",
             "ktg2": "Action",
@@ -1172,7 +1172,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Witcher",
             "ktg1": "Action",
             "ktg2": "Drama",
@@ -1182,7 +1182,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "One-Punch Man",
             "ktg1": "Action",
             "ktg2": "Action",
@@ -1192,7 +1192,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Blacklist",
             "ktg1": "Action",
             "ktg2": "Adventure",
@@ -1202,7 +1202,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Flash",
             "ktg1": "Action",
             "ktg2": "Drama",
@@ -1212,7 +1212,7 @@
         },
         {
             "platform": "NETFLIX",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The 100",
             "ktg1": "Action",
             "ktg2": "Sci-fi",
@@ -1274,7 +1274,7 @@
             "platform": "Prime Video",
             "type": "Film",
             "name": "District 9",
-            "ktg1": "Sci-fi",
+            "ktg1": "Sci-Fi",
             "ktg2": "Adventure",
             "ktg3": "Action",
             "url": "https://reelgood.com/movie/district-9-2009",
@@ -1284,7 +1284,7 @@
             "platform": "Prime Video",
             "type": "Film",
             "name": "Goldfinger",
-            "ktg1": "Sci-fi",
+            "ktg1": "Sci-Fi",
             "ktg2": "Action",
             "ktg3": "Adventure",
             "url": "https://reelgood.com/movie/goldfinger-1964",
@@ -1294,7 +1294,7 @@
             "platform": "Prime Video",
             "type": "Film",
             "name": "A Trip to the Moon",
-            "ktg1": "Sci-fi",
+            "ktg1": "Sci-Fi",
             "ktg2": "Action",
             "ktg3": "Adventure",
             "url": "https://reelgood.com/movie/a-trip-to-the-moon-1902",
@@ -1304,7 +1304,7 @@
             "platform": "Prime Video",
             "type": "Film",
             "name": "Star Trek ll: The Wrath of Khan",
-            "ktg1": "Sci-fi",
+            "ktg1": "Sci-Fi",
             "ktg2": "Action",
             "ktg3": "Adventure",
             "url": "https://reelgood.com/movie/star-trek-ii-the-wrath-of-khan-1982",
@@ -1314,7 +1314,7 @@
             "platform": "Prime Video",
             "type": "Film",
             "name": "Annihilation",
-            "ktg1": "Sci-fi",
+            "ktg1": "Sci-Fi",
             "ktg2": "Adventure",
             "ktg3": "Action",
             "url": "https://reelgood.com/movie/annihilation-2018",
@@ -1372,7 +1372,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Band of Brothers",
             "ktg1": "Action",
             "ktg2": "Adventure",
@@ -1382,7 +1382,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Vikings",
             "ktg1": "Action",
             "ktg2": "Adventure",
@@ -1392,7 +1392,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Boys",
             "ktg1": "Action",
             "ktg2": "Adventure",
@@ -1402,7 +1402,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Expanse",
             "ktg1": "Action",
             "ktg2": "Adventure",
@@ -1412,7 +1412,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Rome",
             "ktg1": "Action",
             "ktg2": "Adventure",
@@ -1422,7 +1422,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Orphan Black",
             "ktg1": "Adventure",
             "ktg2": "Drama",
@@ -1432,7 +1432,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Star Trek: The Next Generation",
             "ktg1": "Adventure",
             "ktg2": "Action",
@@ -1442,7 +1442,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Chuck",
             "ktg1": "Adventure",
             "ktg2": "Comedy",
@@ -1452,7 +1452,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Tom Clancy's Jack Ryan",
             "ktg1": "Adventure",
             "ktg2": "Action",
@@ -1462,7 +1462,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Banshee",
             "ktg1": "Adventure",
             "ktg2": "Action",
@@ -1472,7 +1472,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "The Pacific",
             "ktg1": "War",
             "ktg2": "Drama",
@@ -1482,7 +1482,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Generation Kill",
             "ktg1": "War",
             "ktg2": "Action",
@@ -1492,7 +1492,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Stargate SG-1",
             "ktg1": "War",
             "ktg2": "Sci-fi",
@@ -1502,7 +1502,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Vanity Fair",
             "ktg1": "War",
             "ktg2": "Drama",
@@ -1512,7 +1512,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Our Girl",
             "ktg1": "War",
             "ktg2": "War",
@@ -1522,7 +1522,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Mr. Bean",
             "ktg1": "Comedy",
             "ktg2": "Comedy",
@@ -1532,7 +1532,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "30 Rock",
             "ktg1": "Comedy",
             "ktg2": "Comedy",
@@ -1542,7 +1542,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Californication",
             "ktg1": "Comedy",
             "ktg2": "Drama",
@@ -1552,7 +1552,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Extras",
             "ktg1": "Comedy",
             "ktg2": "Comedy",
@@ -1562,7 +1562,7 @@
         },
         {
             "platform": "Prime Video",
-            "type": "TV Series",
+            "type": "Tv Series",
             "name": "Awkward.",
             "ktg1": "Comedy",
             "ktg2": "Drama",
