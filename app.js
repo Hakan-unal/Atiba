@@ -24,8 +24,6 @@ app.use(errorController.get404Page);
 _db.mongoConnect(() => {
 
     app.listen(port, () => {
-        console.log(" ");
-        console.log(`Port: ${port}   running...`);
         console.log(`
 
 
@@ -55,5 +53,7 @@ _db.mongoConnect(() => {
                
                
 `)
+
+console.log(`Port: ${port}   running...`);
     });
 });

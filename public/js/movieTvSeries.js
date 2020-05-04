@@ -68,8 +68,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (element.ktg1 === category & element.type === type & element.platform === platform) {
                     number++;
                     document.querySelector("#table").innerHTML += `
-                <tr>
-                <th class="align-middle h3 text-center text-muted"> ${number}</th>
+                <tr> 
+                    <th class="d-none"> 
+                        <input class="category1" value="${element.ktg1}">
+                    </th>
+                    <th class="d-none"> 
+                        <input class="category1" value="${element.ktg2}">
+                    </th>
+                    <th class="d-none"> 
+                        <input class="category1" value="${element.ktg3}">
+                    </th>
+                    <th class="align-middle h3 text-center text-muted"> ${number}</th>
                     <th> <a href="${element.url}" target="_blank"> <img src="${element.img}" style="height:175px;"> </a> </th>
                     <th class="align-middle h5 text-center font-weight-bold"> ${element.name}</th>
                     <th class="float-right"><a href="${href}" target="_blank"> <img src="${src}" style="height:175px;"> </a></th>
@@ -103,8 +112,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     category.addEventListener("input", () => {
         content.innerHTML = "";
-        console.log(category.value, type.value, platform.value);
-        console.log("category")
 
         progresBarLoading(category.value, type.value, platform.value);
     })
@@ -114,8 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
     type.addEventListener("input", () => {
         content.innerHTML = "";
 
-        console.log(category.value, type.value, platform.value);
-        console.log("type")
 
         progresBarLoading(category.value, type.value, platform.value);
     })
@@ -125,8 +130,6 @@ document.addEventListener("DOMContentLoaded", () => {
     platform.addEventListener("input", () => {
         content.innerHTML = "";
 
-        console.log(category.value, type.value, platform.value);
-        console.log("platform")
 
         progresBarLoading(category.value, type.value, platform.value);
     })
