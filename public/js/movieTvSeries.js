@@ -44,12 +44,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const displayList = (category, type, platform) => {
-        
+        let src = "https://m.media-amazon.com/images/G/01/digital/video/acquisition/amazon_video_light_on_dark.png";
+        let href = "https://www.primevideo.com/?ref_=dvm_pds_amz_TR_lb_s_g|c_418832678618_m_qtxnGity-dc_s__"
+        if (platform === "NETFLIX") {
+            src = "https://yt3.ggpht.com/a/AATXAJzbOTiIfvxKnIRKQEgXcPJ25xyPhkRd3FtubA=s900-c-k-c0xffffffff-no-rj-mo";
+            href = "https://www.netflix.com/tr/";
+        }
 
         getData().then(data => {
 
             content.innerHTML = `
-            <table class="table table-dark">
+            <table class="table table-dark mt-5">
                 <thead>
                 
                 </thead>
@@ -57,16 +62,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 </tbody>
             </table>
             `;
-            
-            data.forEach(element => {
+            let number = 0;
+            data.forEach((element, index) => {
+                
                 if (element.ktg1 === category & element.type === type & element.platform === platform) {
+                    number++;
                     document.querySelector("#table").innerHTML += `
                 <tr>
-                    <th> <a href="${element.url}"> <img src="${element.img}" style="width:100px;"> </a> </th>
-                    <th> ${element.name}</th>
-                    <th>${element.platform}</th>
-                    <th> ${element.ktg1}</th>
-                    <th>${element.type}</th>
+                <th class="align-middle h3 text-center text-muted"> ${number}</th>
+                    <th> <a href="${element.url}" target="_blank"> <img src="${element.img}" style="height:175px;"> </a> </th>
+                    <th class="align-middle h5 text-center font-weight-bold"> ${element.name}</th>
+                    <th class="float-right"><a href="${href}" target="_blank"> <img src="${src}" style="height:175px;"> </a></th>
                 </tr>
 
             `
@@ -96,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     category.addEventListener("input", () => {
-        content.innerHTML="";
+        content.innerHTML = "";
         console.log(category.value, type.value, platform.value);
         console.log("category")
 
@@ -106,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     type.addEventListener("input", () => {
-        content.innerHTML="";
+        content.innerHTML = "";
 
         console.log(category.value, type.value, platform.value);
         console.log("type")
@@ -117,7 +123,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     platform.addEventListener("input", () => {
-        content.innerHTML="";
+        content.innerHTML = "";
 
         console.log(category.value, type.value, platform.value);
         console.log("platform")

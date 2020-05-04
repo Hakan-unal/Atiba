@@ -3,16 +3,6 @@
         {
             "platform": "NETFLIX",
             "type": "Film",
-            "name": "The Matrix",
-            "ktg1": "Sci-Fi",
-            "ktg2": "Action",
-            "ktg3": "Adventure",
-            "url": "https://www.netflix.com/watch/20557937?trackId=14277281&tctx=0%2C0%2C2e26e6c9-538b-445c-a838-ad5758c8cd50-573598681%2C%2C",
-            "img": "https://occ-0-3904-1490.1.nflxso.net/dnm/api/v6/AwfSa8TtJlDHJjLcbE--NI7p5gU/AAAABauhkGOH8QfsX7_BeOifijTIhdUOVwsOIr65d-c6JDAKHFmiEDNKMVyPtKjyVAzGniRg5ERpFEOp1djKNbnGTYsnt-cJ4oJ9GQ.png?r=432"
-        },
-        {
-            "platform": "NETFLIX",
-            "type": "Film",
             "name": "The Matrix Reloaded",
             "ktg1": "Sci-Fi",
             "ktg2": "Action",
@@ -1569,6 +1559,56 @@
             "ktg3": "Comedy",
             "url": "https://reelgood.com/show/awkward-2011",
             "img": "https://img.reelgood.com/content/show/79373186-1e48-45c9-87ab-de2192030c30/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "12 Strong",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "War",
+            "url": "https://www.amazon.com/12-Strong-Michael-Shannon/dp/B0791T5DTV/ref=sr_1_1?dchild=1&qid=1588613234&refinements=p_n_theme_browse-bin%3A2650381011&s=instant-video&sr=1-1",
+            "img": "https://m.media-amazon.com/images/I/A1HqD2qdlDL._AC_UY218_.jpg"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "War Dogs",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Action",
+            "url": "https://www.amazon.com/War-Dogs-Jonah-Hill/dp/B01KGS9H5E/ref=sr_1_2?dchild=1&qid=1588613234&refinements=p_n_theme_browse-bin%3A2650381011&s=instant-video&sr=1-2",
+            "img": "https://m.media-amazon.com/images/I/81CQ3VnDN3L._AC_UY218_.jpg"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Paths of Glory",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "War",
+            "url": "https://www.amazon.com/Paths-Glory-Kirk-Douglas/dp/B07JYTKCWK/ref=sr_1_3?dchild=1&qid=1588613234&refinements=p_n_theme_browse-bin%3A2650381011&s=instant-video&sr=1-3",
+            "img": "https://m.media-amazon.com/images/I/81yog81zEhL._AC_UY218_.jpg"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Gallipoli",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Drama",
+            "url": "https://www.amazon.com/Gallipoli-Mel-Gibson/dp/B07VXTKN88/ref=sr_1_4?dchild=1&qid=1588613234&refinements=p_n_theme_browse-bin%3A2650381011&s=instant-video&sr=1-4",
+            "img": "https://m.media-amazon.com/images/I/51EuorzIRVL._AC_UY218_.jpg"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "A Bridge Too Far",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://www.amazon.com/Bridge-Too-Far-Anthony-Hopkins/dp/B07JDL1FBL/ref=sr_1_5?dchild=1&qid=1588613234&refinements=p_n_theme_browse-bin%3A2650381011&s=instant-video&sr=1-5",
+            "img": "https://m.media-amazon.com/images/I/41byBNPhj6L._AC_UY218_.jpg"
         }
     ]
 }
