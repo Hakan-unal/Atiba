@@ -1019,6 +1019,556 @@
             "ktg3": "Comedy",
             "url": "https://www.amazon.com/Lady-Bird-Saoirse-Ronan/dp/B07734STRN/ref=sr_1_1?dchild=1&keywords=Lady+Bird&qid=1588530169&s=instant-video&sr=1-1",
             "img": "https://m.media-amazon.com/images/I/91f-o+U2g9L._AC_UY218_.jpg"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Better Call Saul",
+            "ktg1": "Comedy",
+            "ktg2": "Comedy",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/show/better-call-saul-2015",
+            "img": "https://img.reelgood.com/content/show/b00e228d-4520-4545-b63e-839384faceb0/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "The Office",
+            "ktg1": "Comedy",
+            "ktg2": "Comedy",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/the-office-2005",
+            "img": "https://img.reelgood.com/content/show/53a973fc-70d6-48ca-b9ef-893c35342e47/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Community",
+            "ktg1": "Comedy",
+            "ktg2": "Comedy",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/community-2009",
+            "img": "https://img.reelgood.com/content/show/503261cf-eafd-440b-a83e-29fae97b0d2c/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Parks and Recreation",
+            "ktg1": "Comedy",
+            "ktg2": "Comedy",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/parks-and-recreation-2009",
+            "img": "https://img.reelgood.com/content/show/e0b5d8f8-8ba7-4a0a-97e8-b8d7fea0e851/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Shameless",
+            "ktg1": "Comedy",
+            "ktg2": "Drama",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/shameless-2011",
+            "img": "https://img.reelgood.com/content/show/4bfd8d36-016a-4eb7-8bd8-aaff870a7d8e/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Peaky Blinders",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/show/peaky-blinders-2013",
+            "img": "https://img.reelgood.com/content/show/a51d1ed5-3b87-4466-ae64-7379934703aa/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "The End of the F***ing World",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/the-end-of-the-fing-world",
+            "img": "https://img.reelgood.com/content/show/e4fad16a-43cd-46cc-b71d-dab785d94bb8/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "The Vietnam War",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "War",
+            "url": "https://reelgood.com/show/the-vietnam-war-2017",
+            "img": "https://img.reelgood.com/content/show/2b8e11bc-cf2a-4ce8-b0cc-277777507497/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "The Dark Crystal: Age of Resistance",
+            "ktg1": "War",
+            "ktg2": "Drama",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/the-dark-crystal-age-of-resistance",
+            "img": "https://img.reelgood.com/content/show/fe2b0ba1-0352-481b-9af8-75f319e96c88/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Rise of Empires: Ottoman",
+            "ktg1": "War",
+            "ktg2": "Drama",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/rise-of-empires-ottoman-2020",
+            "img": "https://img.reelgood.com/content/show/434143a3-4109-4ba5-b5ea-7bce0b3cc848/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Money Heist",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/money-heist-2017",
+            "img": "https://img.reelgood.com/content/show/a1690196-5da4-447b-85c8-bf1e799dd465/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Sherlock",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/sherlock-2010",
+            "img": "https://img.reelgood.com/content/show/cb95f4e2-d119-4a1c-99cd-bda75ac33e32/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Attack on Titan",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/attack-on-titan-2013",
+            "img": "https://img.reelgood.com/content/show/136e00c2-b612-4651-882e-38188e3a751a/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Fullmetal Alchemist: Brotherhood",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/fullmetal-alchemist-brotherhood-2009",
+            "img": "https://img.reelgood.com/content/show/3a43c5e4-1ebd-45cc-b11a-edda7397271c/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "Marvel's Daredevil",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/marvels-daredevil-2015",
+            "img": "https://img.reelgood.com/content/show/3b56af27-d240-499d-88a7-2db18973fd81/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "The Witcher",
+            "ktg1": "Action",
+            "ktg2": "Drama",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/the-witcher-2020",
+            "img": "https://img.reelgood.com/content/show/603b626d-c5ad-46f6-9578-2406c47a1b9e/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "One-Punch Man",
+            "ktg1": "Action",
+            "ktg2": "Action",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/one-punch-man-2015",
+            "img": "https://img.reelgood.com/content/show/beada7af-2375-48ae-a1f4-9469ab7534e7/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "The Blacklist",
+            "ktg1": "Action",
+            "ktg2": "Adventure",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/the-blacklist-2013",
+            "img": "https://img.reelgood.com/content/show/d780bb23-3013-4421-8acc-2758b745205d/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "The Flash",
+            "ktg1": "Action",
+            "ktg2": "Drama",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/the-flash-2014",
+            "img": "https://img.reelgood.com/content/show/787f6e15-a99c-4bd2-9849-e9dddab02e90/poster-780.webp"
+        },
+        {
+            "platform": "NETFLIX",
+            "type": "TV Series",
+            "name": "The 100",
+            "ktg1": "Action",
+            "ktg2": "Sci-fi",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/the-100-2014",
+            "img": "https://img.reelgood.com/content/show/e5dba197-1caa-442e-a098-f5e7dc41c3ff/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "It's a Wonderful Life",
+            "ktg1": "Drama",
+            "ktg2": "Drama",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/movie/its-a-wonderful-life-1946",
+            "img": "https://img.reelgood.com/content/movie/74a75c31-a6f2-495f-b49c-57854edfd323/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Downfall",
+            "ktg1": "Drama",
+            "ktg2": "War",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/movie/downfall-2004",
+            "img": "https://img.reelgood.com/content/movie/5b921a9b-707a-474b-b69e-19c1a986bf2c/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "A Quiet Place",
+            "ktg1": "Drama",
+            "ktg2": "Drama",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/movie/a-quiet-place-2018",
+            "img": "https://img.reelgood.com/content/movie/0b24824c-4089-44a1-8f21-ebb99609f52d/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Warrior",
+            "ktg1": "Drama",
+            "ktg2": "Drama",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/movie/warrior-2011",
+            "img": "https://img.reelgood.com/content/movie/94c7412d-4167-4bcd-8c41-53df261feff9/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Sunset Boulevard",
+            "ktg1": "Drama",
+            "ktg2": "Drama",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/movie/sunset-boulevard-1950",
+            "img": "https://img.reelgood.com/content/movie/7d7265c1-df6c-47e4-b170-6110aedca6de/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "District 9",
+            "ktg1": "Sci-fi",
+            "ktg2": "Adventure",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/movie/district-9-2009",
+            "img": "https://img.reelgood.com/content/movie/d6376b3e-407f-42fc-a035-209fb3392694/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Goldfinger",
+            "ktg1": "Sci-fi",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/movie/goldfinger-1964",
+            "img": "https://img.reelgood.com/content/movie/db0fe4a6-5bf5-4460-b434-eede213e26c5/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "A Trip to the Moon",
+            "ktg1": "Sci-fi",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/movie/a-trip-to-the-moon-1902",
+            "img": "https://img.reelgood.com/content/movie/54ebc48c-3e13-4c2a-8efa-d5733c9ff1bc/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Star Trek ll: The Wrath of Khan",
+            "ktg1": "Sci-fi",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/movie/star-trek-ii-the-wrath-of-khan-1982",
+            "img": "https://img.reelgood.com/content/movie/1b8aa62f-487e-48cf-b2d8-8cf4743fd783/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Annihilation",
+            "ktg1": "Sci-fi",
+            "ktg2": "Adventure",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/movie/annihilation-2018",
+            "img": "https://img.reelgood.com/content/movie/624985d7-ef5b-4210-9380-8348ca577cfd/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Nosferatu",
+            "ktg1": "Thriller",
+            "ktg2": "Thriller",
+            "ktg3": "Thriller",
+            "url": "https://reelgood.com/movie/nosferatu-1922",
+            "img": "https://img.reelgood.com/content/movie/d677f519-327d-46f1-8fcc-6da08eec4688/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "The Monster Squad",
+            "ktg1": "Thriller",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/movie/the-monster-squad-1987",
+            "img": "https://img.reelgood.com/content/movie/39445e0f-9581-4f0a-82d8-5ac060de9a91/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "The Last Man on Earth",
+            "ktg1": "Thriller",
+            "ktg2": "Sci-fi",
+            "ktg3": "Thriller",
+            "url": "https://reelgood.com/movie/the-last-man-on-earth-1964",
+            "img": "https://img.reelgood.com/content/movie/dd4c174c-8821-4ffb-8e12-737f0a3c79a2/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Stake Land",
+            "ktg1": "Thriller",
+            "ktg2": "Drama",
+            "ktg3": "Thriller",
+            "url": "https://reelgood.com/movie/stake-land-2010",
+            "img": "https://img.reelgood.com/content/movie/f78e7079-f7a5-402d-b75d-e69c8e47912a/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "Film",
+            "name": "Afflicted",
+            "ktg1": "Thriller",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/movie/afflicted-2014",
+            "img": "https://img.reelgood.com/content/movie/84df9fc7-edf2-4e7b-b002-eff1edf6157e/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Band of Brothers",
+            "ktg1": "Action",
+            "ktg2": "Adventure",
+            "ktg3": "War",
+            "url": "https://reelgood.com/show/band-of-brothers-2001",
+            "img": "https://img.reelgood.com/content/show/5927efb9-4a41-4d08-98f9-dd6c013507d2/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Vikings",
+            "ktg1": "Action",
+            "ktg2": "Adventure",
+            "ktg3": "War",
+            "url": "https://reelgood.com/show/vikings-2013",
+            "img": "https://img.reelgood.com/content/show/3ba72591-b06c-4da5-97ee-1abe08ff9667/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "The Boys",
+            "ktg1": "Action",
+            "ktg2": "Adventure",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/the-boys-2019",
+            "img": "https://img.reelgood.com/content/show/2c7906da-cafe-4fc6-8260-31399681b6d5/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "The Expanse",
+            "ktg1": "Action",
+            "ktg2": "Adventure",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/the-expanse-2015",
+            "img": "https://img.reelgood.com/content/show/0e7ad583-298f-4962-8c0a-12556fe513de/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Rome",
+            "ktg1": "Action",
+            "ktg2": "Adventure",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/show/rome-2005",
+            "img": "https://img.reelgood.com/content/show/af820782-b15c-4199-970e-f57238d5aa4e/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Orphan Black",
+            "ktg1": "Adventure",
+            "ktg2": "Drama",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/orphan-black-2013",
+            "img": "https://img.reelgood.com/content/show/7e5cea33-817e-46fe-aa5f-ba06b56ac577/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Star Trek: The Next Generation",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Sci-fi",
+            "url": "https://reelgood.com/show/star-trek-the-next-generation-1987",
+            "img": "https://img.reelgood.com/content/show/85ba73f9-7762-4709-9b0f-99afcb9a6bdb/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Chuck",
+            "ktg1": "Adventure",
+            "ktg2": "Comedy",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/chuck-2007",
+            "img": "https://img.reelgood.com/content/show/c8ec2672-3627-4705-aa54-a8cf9056e262/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Tom Clancy's Jack Ryan",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/show/jack-ryan-2018",
+            "img": "https://img.reelgood.com/content/show/c832d8a9-efd1-4efc-be16-c6543ccec513/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Banshee",
+            "ktg1": "Adventure",
+            "ktg2": "Action",
+            "ktg3": "Thriller",
+            "url": "https://reelgood.com/show/banshee-2013",
+            "img": "https://img.reelgood.com/content/show/4bca539e-fc2b-474f-b350-4378749af617/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "The Pacific",
+            "ktg1": "War",
+            "ktg2": "Drama",
+            "ktg3": "History",
+            "url": "https://reelgood.com/show/the-pacific-2010",
+            "img": "https://img.reelgood.com/content/show/c3d609e6-0381-4bee-a1b5-bb5d956fb8c3/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Generation Kill",
+            "ktg1": "War",
+            "ktg2": "Action",
+            "ktg3": "Adventure",
+            "url": "https://reelgood.com/show/generation-kill-2008",
+            "img": "https://img.reelgood.com/content/show/671a0762-2c88-42e0-ab74-86993f0e3a0f/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Stargate SG-1",
+            "ktg1": "War",
+            "ktg2": "Sci-fi",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/stargate-sg-1-1997",
+            "img": "https://img.reelgood.com/content/show/439550de-e4cf-455f-bbeb-2614812621a9/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Vanity Fair",
+            "ktg1": "War",
+            "ktg2": "Drama",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/vanity-fair-2018",
+            "img": "https://img.reelgood.com/content/show/55e0446b-fa22-4109-9a40-70bd7335d0e4/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Our Girl",
+            "ktg1": "War",
+            "ktg2": "War",
+            "ktg3": "Action",
+            "url": "https://reelgood.com/show/our-girl-2014",
+            "img": "https://img.reelgood.com/content/show/956e697b-028c-48e5-a2ce-3e2afb7aa25e/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Mr. Bean",
+            "ktg1": "Comedy",
+            "ktg2": "Comedy",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/mr-bean-1990",
+            "img": "https://img.reelgood.com/content/show/ba4a272e-7b4d-46e4-9949-00624cabea56/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "30 Rock",
+            "ktg1": "Comedy",
+            "ktg2": "Comedy",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/30-rock-2006",
+            "img": "https://img.reelgood.com/content/show/f12104d1-6151-4f96-9d4e-3369a242c1be/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Californication",
+            "ktg1": "Comedy",
+            "ktg2": "Drama",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/californication-2007",
+            "img": "https://img.reelgood.com/content/show/23dd6808-42df-4857-84bc-81d8ed1078fe/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Extras",
+            "ktg1": "Comedy",
+            "ktg2": "Comedy",
+            "ktg3": "Drama",
+            "url": "https://reelgood.com/show/extras-2005",
+            "img": "https://img.reelgood.com/content/show/d26503e4-d144-4784-a8c4-b710cca23530/poster-780.webp"
+        },
+        {
+            "platform": "Prime Video",
+            "type": "TV Series",
+            "name": "Awkward.",
+            "ktg1": "Comedy",
+            "ktg2": "Drama",
+            "ktg3": "Comedy",
+            "url": "https://reelgood.com/show/awkward-2011",
+            "img": "https://img.reelgood.com/content/show/79373186-1e48-45c9-87ab-de2192030c30/poster-780.webp"
         }
     ]
 }
