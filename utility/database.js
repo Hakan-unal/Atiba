@@ -1,7 +1,7 @@
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
 
-const connectionUrl = "mongodb+srv://Hakan-unal:XrBDTYFNMOaMtLhA@hakan-db-q02p3.mongodb.net/test?retryWrites=true&w=majority";
+const connectionUrl = process.env.MONGODB || "mongodb+srv://Hakan-unal:XrBDTYFNMOaMtLhA@hakan-db-q02p3.mongodb.net/test?retryWrites=true&w=majority";
 const dbName = "atiba";
 let db;
 
