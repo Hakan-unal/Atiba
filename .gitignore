@@ -1,5 +1,5 @@
 # Npm packages
 node_modules
 
-# Database
-database.js
+# Database connection
+utility/database.js

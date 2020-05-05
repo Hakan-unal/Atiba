@@ -19,8 +19,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+    const createCardList = (array) => {
+        console.log(array.forEach(element => {
+            content.innerHTML+=`
+            <div class="col-3 my-5">
+                <div class="card bg-dark">
+                    <div class="card-img-top bg-dark">
+                        <a class="stretched-link" href="${element.url}" target="_blank"></a>
+                        <img src="${element.img}" style="width:100%;  height:325px;"> 
+                    </div>
+                </div>
+            </div>
+            `;
+            
+        }));
+    }
 
-    const displayList = (first, second) => {
+
+
+    const findPreferList = (first, second) => {
         let category1, category2;
         category1 = [];
         category2 = [];
@@ -32,22 +49,19 @@ document.addEventListener("DOMContentLoaded", () => {
                     category2.push(element);
                 }
             })
-            let resultArray = [];
 
-            // burada sıkıntı var yarın düzelt  tekrarı önlemen lazım
-            for (let i = 0; i < 8; i++) {
+            let resultArray = new Set();
+
+            for (let i = 0; i < 10; i++) {
                 let index = Math.round(Math.random() * 16);
-                if (deger === index) {
-                    index = Math.round(Math.random() * 16)
-                }
 
-                resultArray.push(category1[index]);
-                if (i >= 4) {
-                    resultArray.push(category2[index]);
+                resultArray.add(category1[index]);
+                if (i >= 5) {
+                    resultArray.add(category2[index]);
                 }
 
             }
-            console.log(resultArray);
+            createCardList(resultArray);
         })
     }
 
@@ -97,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
             case drama: secondSelection = "Drama"; break;
             case comedy: secondSelection = "Comedy"; break;
         }
-        displayList(firstSelection, secondSelection);
+        findPreferList(firstSelection, secondSelection);
 
     }
     getLocalStorage();

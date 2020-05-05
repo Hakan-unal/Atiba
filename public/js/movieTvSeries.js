@@ -108,8 +108,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-
-
     category.addEventListener("input", () => {
         content.innerHTML = "";
 

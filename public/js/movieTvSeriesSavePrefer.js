@@ -29,24 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     content.addEventListener("click", (event) => {
         if (event.target.tagName === "TH") {
             selector(event.target.parentElement.children[0].children[0].value, event.target.parentElement.children[1].children[0].value, event.target.parentElement.children[2].children[0].value);
