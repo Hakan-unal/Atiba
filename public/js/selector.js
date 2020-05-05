@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     const createCardList = (array) => {
-        console.log(array.forEach(element => {
-            content.innerHTML+=`
+        array.forEach(element => {
+            content.innerHTML += `
             <div class="col-3 my-5">
                 <div class="card bg-dark">
                     <div class="card-img-top bg-dark">
@@ -31,8 +31,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             </div>
             `;
-            
-        }));
+
+        });
     }
 
 
