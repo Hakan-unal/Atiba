@@ -1,2 +1,5 @@
+# Npm packages
 node_modules
-utility/database.js
+
+# Database
+utility
