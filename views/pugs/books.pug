@@ -3,9 +3,9 @@ extends ../layouts/main.pug
 block content
     .row.mt-5
         .col-4
-            input.w-100.h-100(type="text" placeholder="Aradığınız filmin adını giriniz")
+            input.w-100.h-100#searchInput(type="text" placeholder="Search on google")
         .col-2
-            input.btn.btn-outline-light.btn-lg(type="button" value="Search")
+            input.btn.btn-outline-light.btn-lg#searchButton(type="button" value="Search")
         
             
     hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
