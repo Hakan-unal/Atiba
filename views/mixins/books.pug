@@ -1,10 +1,9 @@
 mixin createList(book)
     .card.mb-3.bg-white.border-0
         img.card-img-top(src="http://localhost:3000/img/kitaplar.jpeg")
-        .card-body
-            .card-title.border-0.text-center
-                b.card-title.text-center.text-dark.border-0.font-weight-bold.h4 #{book.title}
-                .card-title.bg-white #{book.description} 
+        .card-body.bg-dark
+            .card-title.text-center.text-light.border-0.font-weight-bold.h6.bg-dark #{book.title}
+            .card-title.bg-dark.text-light #{book.description} 
                         a.stretched-link(href=`${book.amazon_product_url}` target="_blank")
-            .card-footer.mt-3.text-center.text-dark.bg-white (#{book.author}) 
+            .card-footer.mt-3.text-center.text-light.bg-dark (#{book.author}) 
                       

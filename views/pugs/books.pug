@@ -1,5 +1,8 @@
 extends ../layouts/main.pug 
 
+block styles
+     
+    link(rel="stylesheet" href="http://localhost:3000/css/book.css")
 block content
     .row.mt-5
         .col-4
@@ -18,54 +21,58 @@ block content
     .row.mt-2
         
         .col-lg-3.col-md-4.mt-5
-            .card
-                a(href="books/selector")
-                    img.card-img-top(src="http://localhost:3000/img/movies.png")
-        
-        .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 Bestseller
                 a(href="books/bestseller")
-                    img.card-img-top(src="http://localhost:3000/img/top250.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/bestseller.jpeg" style="height:200px")
         
         .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 Crime
                 a(href="books/crime")
-                    img.card-img-top(src="http://localhost:3000/img/netflix.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/crime.jpg" style="height:200px")
     
         .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 Art
                 a(href="books/art")
-                    img.card-img-top(src="http://localhost:3000/img/toprated.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/art.jpg" style="height:200px")
         
         .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 Children
                 a(href="books/children")
-                    img.card-img-top(src="http://localhost:3000/img/comics.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/children.jpg" style="height:200px")
         
         .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 Education
                 a(href="books/education")
-                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/education.png" style="height:200px")
         
         .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 Computer
                 a(href="books/computer")
-                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/computer.jpg" style="height:200px")
         
         .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 History
                 a(href="books/history")
-                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/history.jpg" style="height:200px")
         
         .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 Economy
                 a(href="books/economy")
-                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/economy.jpeg" style="height:200px")
         
         .col-lg-3.col-md-4.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h5 Politics
                 a(href="books/politics")
-                    img.card-img-top(src="http://localhost:3000/img/smartselector.png")
+                    img.card-img-top(src="http://localhost:3000/img/books/politics.jpg" style="height:200px")
         
 
 

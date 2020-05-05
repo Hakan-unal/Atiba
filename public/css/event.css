@@ -1,0 +1,9 @@
+.card:hover img{
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+
+.card:hover .card-body{
+    font-size: xx-large;
+    transition: font-size 3s;
+}

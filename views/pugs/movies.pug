@@ -1,5 +1,7 @@
 extends ../layouts/main.pug 
 
+block styles
+    link(rel="stylesheet" href="http://localhost:3000/css/movies.css")
 
 block content
     
@@ -20,20 +22,23 @@ block content
     .row.mt-2
         
         .col-lg-4.col-md-6.mt-5
-            .card
-                a(href="movies/selector")
-                    img.card-img-top(src="http://localhost:3000/img/movies.png" style="height:550px;")
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h4 Smart Picker
+                a.border-0(href="movies/selector")
+                    img.card-img-top(src="" style="height:300px;")
         
         .col-lg-4.col-md-6.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h4 Movie & TV Series
                 a(href="movies/movietv")
-                    img.card-img-top(src="http://localhost:3000/img/top250.png" style="height:550px;")
-        
+                    img.card-img-top(src="http://localhost:3000/img/movies/all.webp" style="height:300px;")
+
         .col-lg-4.col-md-6.mt-5
-            .card
+            .card.rounded-lg.border-0
+                .card-header.text-light.text-center.border-0.bg-dark.h4 IMDB TOP 50
                 a(href="movies/top50")
-                    img.card-img-top(src="http://localhost:3000/img/netflix.png" style="height:550px;")
-    
+                    img.card-img-top(src="http://localhost:3000/img/movies/top50.png" style="height:300px;")
+
         
 block scripts
         script(src="http://localhost:3000/js/movies.js") 

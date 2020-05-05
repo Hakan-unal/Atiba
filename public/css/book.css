@@ -1,0 +1,8 @@
+.card:hover img{
+    opacity: 0.6;
+    transition: opacity 1s;
+}
+
+.card:hover .card-header{
+    text-shadow: 3px 3px #9c9a1a;
+}
