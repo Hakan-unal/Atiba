@@ -1,9 +1,12 @@
 extends ../../layouts/main.pug 
 
+block styles
+  
+    link(rel="stylesheet" href="http://localhost:3000/css/selector.css")
 
 block content
-      .text-center.display-2.text-light Önerilenler
-      hr
+      .text-center.h4.text-light.font-weight-bolder Önerilenler
+      hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
       .row#content.mt-3
 
 

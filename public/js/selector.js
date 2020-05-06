@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="card bg-dark">
                     <div class="card-img-top bg-dark">
                         <a class="stretched-link" href="${element.url}" target="_blank"></a>
-                        <img src="${element.img}" style="width:100%;  height:325px;"> 
+                        <img src="${element.img}" style="width:100%;  height:275px;"> 
                     </div>
                 </div>
             </div>
