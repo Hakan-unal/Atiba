@@ -1,4 +1,4 @@
-# Project Title
+# Atiba
 
 
 Interactive with the user, all the content is gathered in one place. Web based software project
@@ -47,5 +47,11 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running the project
 
     $ npm start
+
+
+## Important !!!
+
+You need MongoDB connection information and collections. If you don't have this information, the project won't work. Contact me if you want to learn :)
+
 
 
