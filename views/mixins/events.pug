@@ -2,7 +2,7 @@ mixin createList(event)
     
     .card.mb-3.bg-secondary.border-0
         a.stretched-link(href=`${event.ticket}` target ="_blank")
-        img.card-img-top.w-100.img-thumbnail(src=`${event.img}`)
+        img.card-img-top(src=`${event.img}` style="width:280px; height:225px;")
         .card-body.bg-dark
             .card-title.text-center.text-white.border-0 #{event.name}
             .card-title.text-center.text-white.border-0 #{event.date}

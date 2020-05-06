@@ -7,7 +7,10 @@ block styles
 
 block content
     
-    .row
+    a.text-white(href="/user/books")
+        i.far.fa-arrow-alt-circle-left.fa-2x(aria-hidden="true") Back
+    hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
+    .row.mt-3
             if books !== null
                   each book in books
                         .col-lg-4.col-md-6.my-3

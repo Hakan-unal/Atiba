@@ -10,29 +10,29 @@ block content
     
 
 
-    .h1.text-light.text-center Cinema
     hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
     
     .progress#progresBar.border-0.bg-dark.h-25
         .progress-bar.progress-bar-striped.progress-bar-animated.bg-dark.border-0.rounded-pill(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;") 
             p.h5 Loading....
     
+    #baslik1.text-center.h4.text-light.my-3.d-none.font-weight-bolder Vizyondakiler
     .row#satir1.d-none
         if vizyondakiler !== null
             each movie in vizyondakiler
                 .col-lg-3.col-md-4.my-3
                     +createList(movie)
         else 
-            .text-center.text-light.h1 No Documents
+            .text-center.text-light.h1.font-weight-bold No Documents
     
-    #baslik2.text-center.h2.text-light.my-3.d-none Yakında Gelecekler   
+    #baslik2.text-center.h2.text-light.my-3.d-none.font-weight-bolder Yakında Gelecekler   
     .row#satir2.d-none
         if gelecekler !== null
             each movie in gelecekler
                 .col-lg-3.col-md-4.my-3
                     +createList(movie)
         else 
-            .text-center.text-light.h1 No Documents
+            .text-center.text-light.h1.font-weight-bold No Documents
         
 
 block scripts

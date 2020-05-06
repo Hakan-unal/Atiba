@@ -4,6 +4,6 @@
 }
 
 .card:hover .card-body{
-    font-size: xx-large;
+    font-size: x-large;
     transition: font-size 3s;
 }
