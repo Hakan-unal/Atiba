@@ -22,11 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const createCardList = (array) => {
         array.forEach(element => {
             content.innerHTML += `
-            <div class="col-3 my-5">
-                <div class="card bg-dark">
+            <div class="col-sm-6 col-md-4 col-lg-3 my-5">
+                <div class="card bg-dark border-0">
                     <div class="card-img-top bg-dark">
                         <a class="stretched-link" href="${element.url}" target="_blank"></a>
                         <img src="${element.img}" style="width:100%;  height:275px;"> 
+                        <div class="card-body border-0">
+                            <div class="card-title text-center text-light border-0 font-weight-bold">${element.name}</div>
+                            <div class="card-text text-center text-muted">(${element.ktg1})</div>
+                        </div>
                     </div>
                 </div>
             </div>

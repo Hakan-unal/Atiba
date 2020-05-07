@@ -7,15 +7,15 @@ block content
     
     .row.mt-5
         .col-4
-            input.w-100.h-100#searchInput(type="text" placeholder="Search on google")
+            input.w-100.h-100#searchInput(type="text" placeholder="Google'da arama yapabilirsiniz")
         .col-2
-            input.btn.btn-outline-light.btn-lg#searchButton(type="button" value="Search")
+            input.btn.btn-outline-warning.btn-lg#searchButton(type="button" value="Ara")
         
             
     hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
     .progress#progresBar.h-100.d-none.bg-dark
         .progress-bar.progress-bar-striped.progress-bar-animated.bg-dark.rounded-pill(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;") 
-            p.h4 Loading....
+            p.h4 Yükleniyor....
         
         
 
@@ -23,19 +23,19 @@ block content
         
         .col-lg-4.col-md-6.mt-5
             .card.rounded-lg.border-0
-                .card-header.text-light.text-center.border-0.bg-dark.h5 Atiba
+                .card-header.text-warning.text-center.border-0.bg-dark.h5.font-weight-bold Atiba
                 a.border-0(href="movies/selector")
                     img.card-img-top(src="http://localhost:3000/img/robot.jpg" style="height:300px;")
         
         .col-lg-4.col-md-6.mt-5
             .card.rounded-lg.border-0
-                .card-header.text-light.text-center.border-0.bg-dark.h5 Movie & TV Series
+                .card-header.text-warning.text-center.border-0.bg-dark.h5.font-weight-bold Filmler ve Diziler
                 a(href="movies/movietv")
                     img.card-img-top(src="http://localhost:3000/img/movies/all.webp" style="height:300px;")
 
         .col-lg-4.col-md-6.mt-5
             .card.rounded-lg.border-0
-                .card-header.text-light.text-center.border-0.bg-dark.h5 IMDB TOP 50
+                .card-header.text-warning.text-center.border-0.bg-dark.h5.font-weight-bold IMDB TOP 50
                 a(href="movies/top50")
                     img.card-img-top(src="http://localhost:3000/img/movies/top50.png" style="height:300px;")
 

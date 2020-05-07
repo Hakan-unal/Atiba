@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const baslik = document.querySelector("#baslik");
 
-    baslik.innerText = "Welcome " + JSON.parse(localStorage.getItem("user"))[0].name;
+    baslik.setAttribute("class","text-warning h4 text-center text-uppercase font-weight-bold")
+    baslik.innerText = "Hoşgeldin " + JSON.parse(localStorage.getItem("user"))[0].name;
 })

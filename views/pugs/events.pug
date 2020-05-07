@@ -9,13 +9,13 @@ block styles
 
 block content
      
-        .h1.text-light.text-center Event
+        .h1.text-warning.text-center Etkinlikler
         hr.mt-2.border-secondary(style="border: 3px solid black; border-radius:10px")
 
     
         .progress#progresBar.bg-dark.h-25
             .progress-bar.progress-bar-striped.progress-bar-animated.bg-dark.rounded-pill(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;") 
-                .h5 Loading....
+                .h5 Yükleniyor....
         
         .row.d-none#row
             if events !== null

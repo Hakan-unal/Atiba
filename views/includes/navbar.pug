@@ -16,31 +16,31 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
                 ul.navbar-nav.mr-auto.mt-1.nav-tabs.border-warning.rounded-lg
 
                     li.nav-item
-                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/movies") Movie & TV Series
+                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/movies") Filmler ve Diziler
                     li.nav-item
-                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/events") Event
+                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/events") Etkinlikler
                     li.nav-item
-                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/cinema") Cinema    
+                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/cinema") Sinema    
                     li.nav-item
-                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/books") Book
+                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/books") Kitaplar
                     li.nav-item
                         a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/covid-19") Covid-19
                     li.nav-item
-                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/contact") Contact
+                        a.nav-link.text-warning.h6.font-weight-bolder.border-0(href="/user/contact") İletişim
                     
             ul.navbar-nav.ml-auto
                 if isAuthentication
                     li.nav-item
                     div.btn-group(role="group" aria-label="Button group with nested dropdown")
                         div.btn-group(role="group")
-                            button.btn.btn-outline-warning.btn-lg.dropdown-toggle#btnGroupDrop1(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") User Panel
+                            button.btn.btn-outline-warning.btn-lg.dropdown-toggle#btnGroupDrop1(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Kullanıcı Paneli
                             div.dropdown-menu.bg-warning(aria-labelledby="btnGroupDrop1")
-                                a.dropdown-item.text-dark.bg-warning.h5(href="/user/account") Account
-                                a.dropdown-item.text-dark.bg-warning.h5(href="/user/actions") User Actions
-                                a.dropdown-item.text-dark.bg-warning.h5(href="/user/documentation") Documentation
-                                a.dropdown-item.text-dark.bg-warning.h5(href="/user/sign-out") Sign Out
+                                a.dropdown-item.text-dark.bg-warning.h5(href="/user/account") Hesap
+                                a.dropdown-item.text-dark.bg-warning.h5(href="/user/actions") Kullanıcı aksiyonları
+                                a.dropdown-item.text-dark.bg-warning.h5(href="/user/documentation") Dökümantasyon
+                                a.dropdown-item.text-dark.bg-warning.h5(href="/user/sign-out") Çıkış
                 else  
                     li.nav-item.mb-2.mr-2
-                        a.btn.btn-warning.btn-lg(href="/sign-up") Sign Up
+                        a.btn.btn-warning.btn-lg(href="/sign-up") Kayıt Ol
                     li.nav-item.mb-2.mr-2
-                        a.btn.btn-outline-warning.btn-lg(href="/login") Login       
+                        a.btn.btn-outline-warning.btn-lg(href="/login") Giriş       

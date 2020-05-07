@@ -14,9 +14,9 @@ block content
     
     .progress#progresBar.border-0.bg-dark.h-25
         .progress-bar.progress-bar-striped.progress-bar-animated.bg-dark.border-0.rounded-pill(role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;") 
-            p.h5 Loading....
+            p.h5 Yükleniyor....
     
-    #baslik1.text-center.h4.text-light.my-3.d-none.font-weight-bolder Vizyondakiler
+    #baslik1.text-center.h4.my-3.d-none.font-weight-bolder Vizyondakiler
     .row#satir1.d-none
         if vizyondakiler !== null
             each movie in vizyondakiler
@@ -25,7 +25,7 @@ block content
         else 
             .text-center.text-light.h1.font-weight-bold No Documents
     
-    #baslik2.text-center.h2.text-light.my-3.d-none.font-weight-bolder Yakında Gelecekler   
+    #baslik2.text-center.h2.text-warning.my-3.d-none.font-weight-bolder Pek Yakında...   
     .row#satir2.d-none
         if gelecekler !== null
             each movie in gelecekler
